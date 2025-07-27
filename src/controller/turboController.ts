@@ -215,9 +215,12 @@ export const deleteTurbo = async (req: Request, res: Response) => {
 
 export const getAllTurbos = async (req: Request, res: Response) => {
   try {
+    console.log('Getting all turbos...');
     const turbos = await Turbo.find({});
+    console.log('Found turbos:', turbos.length);
     return res.status(200).json({ turbos });
   } catch (error) {
+    console.error('Error getting turbos:', error);
     return res.status(500).json({ error: 'Server error', details: error });
   }
 };

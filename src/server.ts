@@ -96,7 +96,9 @@ app.get('/', (req, res) => {
 app.use('/api',routes)
 
 // Database connection
-db.on("error", console.error.bind(console, "MongoDB connection error:"));
+db.on("error", (error) => {
+  console.error("MongoDB connection error:", error);
+});
 db.on("close", function () {
   console.log("DB connection is closed");
 });
