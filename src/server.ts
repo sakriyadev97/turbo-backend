@@ -1,17 +1,17 @@
 import Express from "express";
-import { createServer } from "http";
+
 import helmet from "helmet";
 import routes from "./routes/index";
 import cors from "cors";
 import config from "./config";
 
-import db from "./config/db/db";
+import db, { connectDB } from "./config/db/db";
 
 
 
 
 const app = Express();
-const httpServer = createServer(app);
+
 
 // app.use(cors({
 //   origin: function (origin, callback) {
@@ -95,20 +95,17 @@ app.get('/', (req, res) => {
 
 app.use('/api',routes)
 
-// Database connection
-db.on("error", (error) => {
-  console.error("MongoDB connection error:", error);
-});
-db.on("close", function () {
-  console.log("DB connection is closed");
-});
-db.once("open", function () {
-  console.log("Connected to MongoDB database!!");
-});
+// Initialize database connection
+const initializeApp = async () => {
+  try {
+    // Connect to database
+    await connectDB();
+    console.log("⚡️[server]: Database connected and server ready");
+  } catch (error) {
+    console.error('Failed to initialize app:', error);
+    throw error;
+  }
+};
 
-const port = config.app.port || 5000;
-const host = config.app.host || "localhost";
-
-httpServer.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://${host}:${port}`);
-});
+// Initialize the app
+initializeApp();
