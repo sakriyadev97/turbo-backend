@@ -26,10 +26,7 @@ app.use(cors({
     // Get allowed origins from config, with fallbacks
     let allowedOrigins = [
       'http://localhost:3000', 
-      'http://localhost:3001',
-      // Vercel domains (will be automatically added in production)
-      'https://*.vercel.app',
-      'https://*.vercel.app/*'
+      'http://localhost:3001'
     ];
     
     if (config.app.allowedOrigin) {
@@ -41,6 +38,7 @@ app.use(cors({
         if (config.app.allowedOrigin.match(/^\d+$/)) {
           allowedOrigins = [`http://localhost:${config.app.allowedOrigin}`];
         } else {
+          // Use the allowed origin from .env
           allowedOrigins = [config.app.allowedOrigin];
         }
       }
