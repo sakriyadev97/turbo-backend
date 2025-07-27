@@ -75,6 +75,18 @@ app.use(helmet())
 
 
 
+// Root route for testing
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Turbo Backend API is running!',
+    endpoints: {
+      turbos: '/api/turbos',
+      stats: '/api/turbos/stats',
+      auth: '/api/auth/login'
+    }
+  });
+});
+
 app.use('/api',routes)
 
 // Database connection
