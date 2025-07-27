@@ -1,9 +1,9 @@
 import Express from "express";
-
 import helmet from "helmet";
 import routes from "./routes/index";
 import cors from "cors";
 import config from "./config";
+import { ensureDBConnection } from "./middleware/dbMiddleware";
 
 import db, { connectDB } from "./config/db/db";
 
@@ -93,7 +93,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.use('/api',routes)
+app.use('/api', ensureDBConnection, routes)
 
 // Initialize database connection
 const initializeApp = async () => {
