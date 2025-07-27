@@ -26,7 +26,8 @@ app.use(cors({
     // Get allowed origins from config, with fallbacks
     let allowedOrigins = [
       'http://localhost:3000', 
-      'http://localhost:3001'
+      'http://localhost:3001',
+      'https://turbo-frontend-kappa.vercel.app'
     ];
     
     if (config.app.allowedOrigin) {
