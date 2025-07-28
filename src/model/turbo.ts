@@ -4,6 +4,7 @@ export interface ITurbo extends Document {
   location: string;
   partNumbers: string[]; // For basic entry
   hasSizeOption: boolean;
+  priority?: boolean; // Priority flag
   sizeVariants?: {
     big?: {
       partNumbers: string[];
@@ -29,6 +30,8 @@ const TurboSchema: Schema = new Schema({
   },
 
   hasSizeOption: { type: Boolean, default: false },
+
+  priority: { type: Boolean, default: false }, // Priority flag
 
   sizeVariants: {
     big: {

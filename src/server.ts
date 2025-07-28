@@ -73,6 +73,7 @@ const app = Express();
 // }));
 
 app.use(cors({
+  // origin:"http://localhost:3000", 
   origin:"https://turbo-frontend-kappa.vercel.app", 
   credentials: true, 
 }));

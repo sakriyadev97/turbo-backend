@@ -1,9 +1,17 @@
 import { Request, Response } from 'express';
 import Turbo from '../model/turbo';
 
+// Helper function to determine if an item is low stock based on priority
+const isLowStockItem = (quantity: number, priority: boolean = false): boolean => {
+  if (priority) {
+    return quantity <= 5; // Priority items: low stock if 5 or less
+  }
+  return quantity <= 1; // Regular items: low stock if 1 or less
+};
+
 export const addTurbo = async (req: Request, res: Response) => {
   try {
-    const { location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold } = req.body;
+    const { location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold, priority } = req.body;
 
     if (!location) {
       return res.status(400).json({ error: 'Location is required.' });
@@ -39,6 +47,7 @@ export const addTurbo = async (req: Request, res: Response) => {
     const turbo = new Turbo({
       location,
       hasSizeOption: !!hasSizeOption,
+      priority: !!priority, // Add priority field
       partNumbers: hasSizeOption ? undefined : partNumbers,
       sizeVariants: hasSizeOption ? sizeVariants : undefined,
       quantity: hasSizeOption ? undefined : quantity,
@@ -70,7 +79,7 @@ export const getTurbo = async (req: Request, res: Response) => {
 export const updateTurbo = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
-    const { location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold } = req.body;
+    const { location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold, priority } = req.body;
 
     const turbo = await Turbo.findById(id);
     if (!turbo) {
@@ -113,6 +122,7 @@ export const updateTurbo = async (req: Request, res: Response) => {
       {
         location,
         hasSizeOption: !!hasSizeOption,
+        priority: !!priority, // Add priority field
         partNumbers: hasSizeOption ? undefined : partNumbers,
         sizeVariants: hasSizeOption ? sizeVariants : undefined,
         quantity: hasSizeOption ? undefined : quantity,
@@ -129,7 +139,7 @@ export const updateTurbo = async (req: Request, res: Response) => {
 
 export const updateTurboByPartNumber = async (req: Request, res: Response) => {
   try {
-    const { partNumber, location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold } = req.body;
+    const { partNumber, location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold, priority } = req.body;
 
     if (!partNumber) {
       return res.status(400).json({ error: 'Part number is required.' });
@@ -184,6 +194,7 @@ export const updateTurboByPartNumber = async (req: Request, res: Response) => {
       {
         location,
         hasSizeOption: !!hasSizeOption,
+        priority: !!priority, // Add priority field
         partNumbers: hasSizeOption ? undefined : partNumbers,
         sizeVariants: hasSizeOption ? sizeVariants : undefined,
         quantity: hasSizeOption ? undefined : quantity,
@@ -249,23 +260,22 @@ export const getTurboStats = async (req: Request, res: Response) => {
       }
     });
 
-    // Calculate low stock items (items where quantity <= 1)
+    // Calculate low stock items based on priority
     let lowStockItems = 0;
-    const thresholdForDisplay = 1; // Items with quantity ≤ 1 are considered low stock
     
     turbos.forEach(turbo => {
       if (turbo.hasSizeOption && turbo.sizeVariants) {
         // Check big size variant
-        if (turbo.sizeVariants.big && (turbo.sizeVariants.big.quantity || 0) <= thresholdForDisplay) {
+        if (turbo.sizeVariants.big && isLowStockItem(turbo.sizeVariants.big.quantity || 0, turbo.priority || false)) {
           lowStockItems += turbo.sizeVariants.big.partNumbers ? turbo.sizeVariants.big.partNumbers.length : 0;
         }
         // Check small size variant
-        if (turbo.sizeVariants.small && (turbo.sizeVariants.small.quantity || 0) <= thresholdForDisplay) {
+        if (turbo.sizeVariants.small && isLowStockItem(turbo.sizeVariants.small.quantity || 0, turbo.priority || false)) {
           lowStockItems += turbo.sizeVariants.small.partNumbers ? turbo.sizeVariants.small.partNumbers.length : 0;
         }
       } else {
         // For items without size options, check the main quantity
-        if ((turbo.quantity || 0) <= thresholdForDisplay) {
+        if (isLowStockItem(turbo.quantity || 0, turbo.priority || false)) {
           lowStockItems += turbo.partNumbers ? turbo.partNumbers.length : 0;
         }
       }
@@ -287,11 +297,9 @@ export const getLowStockItems = async (req: Request, res: Response) => {
     const turbos = await Turbo.find({});
 
     turbos.forEach(turbo => {
-      const thresholdForDisplay = 1; // Show items with quantity ≤ 1
-
       if (turbo.hasSizeOption && turbo.sizeVariants) {
         // Check big size variant
-        if (turbo.sizeVariants.big && turbo.sizeVariants.big.quantity <= thresholdForDisplay) {
+        if (turbo.sizeVariants.big && isLowStockItem(turbo.sizeVariants.big.quantity || 0, turbo.priority || false)) {
           turbo.sizeVariants.big.partNumbers.forEach(partNumber => {
             lowStockItemsList.push({
               id: partNumber,
@@ -302,7 +310,7 @@ export const getLowStockItems = async (req: Request, res: Response) => {
           });
         }
         // Check small size variant
-        if (turbo.sizeVariants.small && turbo.sizeVariants.small.quantity <= thresholdForDisplay) {
+        if (turbo.sizeVariants.small && isLowStockItem(turbo.sizeVariants.small.quantity || 0, turbo.priority || false)) {
           turbo.sizeVariants.small.partNumbers.forEach(partNumber => {
             lowStockItemsList.push({
               id: partNumber,
@@ -314,7 +322,7 @@ export const getLowStockItems = async (req: Request, res: Response) => {
         }
       } else if (turbo.partNumbers && turbo.partNumbers.length > 0) {
         // For items without size options, check the main quantity
-        if ((turbo.quantity || 0) <= thresholdForDisplay) {
+        if (isLowStockItem(turbo.quantity || 0, turbo.priority || false)) {
           turbo.partNumbers.forEach(partNumber => {
             lowStockItemsList.push({
               id: partNumber,
