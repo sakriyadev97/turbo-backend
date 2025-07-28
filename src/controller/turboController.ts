@@ -139,7 +139,10 @@ export const updateTurbo = async (req: Request, res: Response) => {
 
 export const updateTurboByPartNumber = async (req: Request, res: Response) => {
   try {
-    const { partNumber, location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold, priority } = req.body;
+    console.log('updateTurboByPartNumber called with body:', req.body);
+    console.log('Priority field type:', typeof req.body.priority);
+    console.log('Priority field value:', req.body.priority);
+    const { partNumber, location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold, priority, operation } = req.body;
 
     if (!partNumber) {
       return res.status(400).json({ error: 'Part number is required.' });
@@ -160,6 +163,54 @@ export const updateTurboByPartNumber = async (req: Request, res: Response) => {
 
     if (!turbo) {
       return res.status(404).json({ error: 'Turbo not found with this part number.' });
+    }
+
+    // Handle "add" operation for when orders arrive
+    if (operation === 'add' && quantity) {
+      console.log('Adding quantity to existing turbo:', quantity);
+      
+      // Find which field contains the part number and add to its quantity
+      if (turbo.partNumbers && turbo.partNumbers.includes(partNumber)) {
+        // Regular turbo (no size variants)
+        const newQuantity = (turbo.quantity || 0) + quantity;
+        const updatedTurbo = await Turbo.findByIdAndUpdate(
+          turbo._id,
+          { quantity: newQuantity },
+          { new: true }
+        );
+        return res.status(200).json({ 
+          message: `Quantity added successfully. New total: ${newQuantity}`, 
+          turbo: updatedTurbo 
+        });
+      } else if (turbo.sizeVariants) {
+        // Size variants turbo
+        let updated = false;
+        const updateData: any = {};
+        
+        if (turbo.sizeVariants.big && turbo.sizeVariants.big.partNumbers.includes(partNumber)) {
+          const newQuantity = (turbo.sizeVariants.big.quantity || 0) + quantity;
+          updateData['sizeVariants.big.quantity'] = newQuantity;
+          updated = true;
+        } else if (turbo.sizeVariants.small && turbo.sizeVariants.small.partNumbers.includes(partNumber)) {
+          const newQuantity = (turbo.sizeVariants.small.quantity || 0) + quantity;
+          updateData['sizeVariants.small.quantity'] = newQuantity;
+          updated = true;
+        }
+        
+        if (updated) {
+          const updatedTurbo = await Turbo.findByIdAndUpdate(
+            turbo._id,
+            updateData,
+            { new: true }
+          );
+          return res.status(200).json({ 
+            message: `Quantity added successfully.`, 
+            turbo: updatedTurbo 
+          });
+        }
+      }
+      
+      return res.status(400).json({ error: 'Could not add quantity to this turbo.' });
     }
 
     if (hasSizeOption) {
@@ -188,18 +239,23 @@ export const updateTurboByPartNumber = async (req: Request, res: Response) => {
       }
     }
 
+    const updateData = {
+      location,
+      hasSizeOption: !!hasSizeOption,
+      priority: !!priority, // Add priority field
+      partNumbers: hasSizeOption ? undefined : partNumbers,
+      sizeVariants: hasSizeOption ? sizeVariants : undefined,
+      quantity: hasSizeOption ? undefined : quantity,
+      threshold: threshold || 0,
+    };
+    
+    console.log('Updating turbo with data:', updateData);
+    console.log('Priority value:', priority, 'Converted to:', !!priority);
+    
     // Update the turbo document
     const updatedTurbo = await Turbo.findByIdAndUpdate(
       turbo._id,
-      {
-        location,
-        hasSizeOption: !!hasSizeOption,
-        priority: !!priority, // Add priority field
-        partNumbers: hasSizeOption ? undefined : partNumbers,
-        sizeVariants: hasSizeOption ? sizeVariants : undefined,
-        quantity: hasSizeOption ? undefined : quantity,
-        threshold: threshold || 0,
-      },
+      updateData,
       { new: true }
     );
 
@@ -347,6 +403,8 @@ export const sellTurbo = async (req: Request, res: Response) => {
     console.log('Request body:', req.body);
     console.log('Request method:', req.method);
     console.log('Request URL:', req.url);
+    console.log('Part number:', req.body.partNumber);
+    console.log('Quantity to sell:', req.body.quantity);
     
     const { partNumber, quantity } = req.body;
 
@@ -415,6 +473,10 @@ export const sellTurbo = async (req: Request, res: Response) => {
       return res.status(500).json({ error: 'Failed to update turbo' });
     }
 
+    console.log('Sell operation completed successfully');
+    console.log('Remaining quantity:', newQuantity);
+    console.log('Sold quantity:', quantity);
+    
     return res.status(200).json({
       message: `Successfully sold ${quantity} turbo(s)`,
       remainingQuantity: newQuantity,
