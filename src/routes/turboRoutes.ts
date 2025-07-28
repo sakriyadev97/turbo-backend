@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { addTurbo, getTurbo, updateTurbo, updateTurboByPartNumber, deleteTurbo, getAllTurbos, getTurboStats, getLowStockItems } from '../controller/turboController';
+import { addTurbo, getTurbo, updateTurbo, updateTurboByPartNumber, deleteTurbo, getAllTurbos, getTurboStats, getLowStockItems, sellTurbo } from '../controller/turboController';
 
 const turboRouter = Router();
 
@@ -19,6 +19,9 @@ turboRouter.post('/create-turbo', addTurbo);
 
 // Route to update a turbo by part number (MUST come before /:id routes)
 turboRouter.put('/turbos/update-by-partnumber', updateTurboByPartNumber);
+
+// Route to sell a turbo
+turboRouter.post('/turbos/sell', sellTurbo);
 
 // Route to get a specific turbo by ID
 turboRouter.get('/turbos/:id', getTurbo);

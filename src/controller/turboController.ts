@@ -339,4 +339,86 @@ export const getLowStockItems = async (req: Request, res: Response) => {
   } catch (error) {
     return res.status(500).json({ error: 'Server error', details: error });
   }
+};
+
+export const sellTurbo = async (req: Request, res: Response) => {
+  try {
+    const { partNumber, quantity } = req.body;
+
+    if (!partNumber) {
+      return res.status(400).json({ error: 'Part number is required' });
+    }
+
+    if (!quantity || quantity <= 0) {
+      return res.status(400).json({ error: 'Valid quantity is required' });
+    }
+
+    // Find the turbo by part number
+    const turbo = await Turbo.findOne({
+      $or: [
+        { 'partNumbers': partNumber },
+        { 'sizeVariants.big.partNumbers': partNumber },
+        { 'sizeVariants.small.partNumbers': partNumber }
+      ]
+    });
+
+    if (!turbo) {
+      return res.status(404).json({ error: 'Turbo not found' });
+    }
+
+    let currentQuantity = 0;
+    let updatePath = '';
+
+    // Determine which quantity to update based on where the part number is found
+    if (turbo.partNumbers && turbo.partNumbers.includes(partNumber)) {
+      // Regular turbo item
+      currentQuantity = turbo.quantity || 0;
+      updatePath = 'quantity';
+    } else if (turbo.sizeVariants?.big?.partNumbers?.includes(partNumber)) {
+      // Big variant
+      currentQuantity = turbo.sizeVariants.big.quantity || 0;
+      updatePath = 'sizeVariants.big.quantity';
+    } else if (turbo.sizeVariants?.small?.partNumbers?.includes(partNumber)) {
+      // Small variant
+      currentQuantity = turbo.sizeVariants.small.quantity || 0;
+      updatePath = 'sizeVariants.small.quantity';
+    }
+
+    // Check if we have enough stock
+    if (currentQuantity < quantity) {
+      return res.status(400).json({ 
+        error: 'Not enough quantity to sell', 
+        available: currentQuantity,
+        requested: quantity 
+      });
+    }
+
+    // Calculate new quantity
+    const newQuantity = currentQuantity - quantity;
+
+    // Update the turbo
+    const updateQuery: any = {};
+    updateQuery[updatePath] = newQuantity;
+
+    const updatedTurbo = await Turbo.findByIdAndUpdate(
+      turbo._id,
+      updateQuery,
+      { new: true }
+    );
+
+    if (!updatedTurbo) {
+      return res.status(500).json({ error: 'Failed to update turbo' });
+    }
+
+    return res.status(200).json({
+      message: `Successfully sold ${quantity} turbo(s)`,
+      remainingQuantity: newQuantity,
+      soldQuantity: quantity,
+      partNumber: partNumber
+    });
+
+  } catch (error) {
+    console.error('Error selling turbo:', error);
+    return res.status(500).json({ error: 'Server error', details: error });
+  }
 }; 
