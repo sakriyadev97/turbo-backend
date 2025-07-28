@@ -343,6 +343,11 @@ export const getLowStockItems = async (req: Request, res: Response) => {
 
 export const sellTurbo = async (req: Request, res: Response) => {
   try {
+    console.log('Sell turbo endpoint called');
+    console.log('Request body:', req.body);
+    console.log('Request method:', req.method);
+    console.log('Request URL:', req.url);
+    
     const { partNumber, quantity } = req.body;
 
     if (!partNumber) {
