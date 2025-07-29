@@ -14,12 +14,17 @@ const createTransporter = () => {
 
 export const sendOrderEmail = async (req: Request, res: Response) => {
   try {
+    console.log('=== EMAIL CONTROLLER CALLED ===');
+    console.log('Request body:', req.body);
+    
     const { subject, body, orders } = req.body;
 
     if (!subject || !body || !orders) {
+      console.log('Missing required fields');
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
+    console.log('Creating email transporter...');
     // Create transporter
     const transporter = createTransporter();
 
@@ -41,6 +46,13 @@ export const sendOrderEmail = async (req: Request, res: Response) => {
       `
     };
 
+    console.log('Email configuration:', {
+      from: process.env.EMAIL_USER,
+      to: 'khadksakriya81@gmail.com',
+      subject: subject
+    });
+
+    console.log('Sending email...');
     // Send email
     const info = await transporter.sendMail(mailOptions);
     
