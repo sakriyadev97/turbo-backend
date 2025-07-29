@@ -73,6 +73,7 @@ const app = Express();
 // }));
 
 app.use(cors({
+  
   // origin:"http://localhost:3000", 
   origin:"https://turbo-frontend-kappa.vercel.app", 
   credentials: true, 
@@ -89,7 +90,8 @@ app.get('/', (req, res) => {
     endpoints: {
       turbos: '/api/turbos',
       stats: '/api/turbos/stats',
-      auth: '/api/auth/login'
+      auth: '/api/auth/login',
+      pendingOrders: '/api/pending-orders'
     }
   });
 });
@@ -99,7 +101,7 @@ app.use('/api', ensureDBConnection, routes)
 // Initialize database connection
 const initializeApp = async () => {
   try {
-    // Connect to database
+    // Connect to databasea
     await connectDB();
     console.log("⚡️[server]: Database connected and server ready");
   } catch (error) {

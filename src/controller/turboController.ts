@@ -148,7 +148,8 @@ export const updateTurboByPartNumber = async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Part number is required.' });
     }
 
-    if (!location) {
+    // Location is only required for update operations, not for "add" operations
+    if (operation !== 'add' && !location) {
       return res.status(400).json({ error: 'Location is required.' });
     }
 
