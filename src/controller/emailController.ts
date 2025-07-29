@@ -8,6 +8,12 @@ const createTransporter = () => {
     auth: {
       user: process.env.EMAIL_USER ,
       pass: process.env.EMAIL_PASSWORD 
+    },
+    // Add these options for better Gmail compatibility
+    secure: true,
+    port: 465,
+    tls: {
+      rejectUnauthorized: false
     }
   });
 };
@@ -31,7 +37,7 @@ export const sendOrderEmail = async (req: Request, res: Response) => {
     // Email configuration
     const mailOptions = {
       from: process.env.EMAIL_USER ,
-      to: 'khadksakriya81@gmail.com', // Set recipient email
+      to:'khadkasakriya81@gmail.com', // Set recipient email
       subject: subject,
       text: body,
       html: `
@@ -57,6 +63,8 @@ export const sendOrderEmail = async (req: Request, res: Response) => {
     const info = await transporter.sendMail(mailOptions);
     
     console.log('Email sent successfully:', info.messageId);
+    console.log('Full email info:', info);
+    console.log('Email response:', info.response);
     
     res.status(200).json({ 
       message: 'Order email sent successfully',
