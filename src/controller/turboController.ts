@@ -281,6 +281,30 @@ export const deleteTurbo = async (req: Request, res: Response) => {
   }
 };
 
+export const deleteTurboByPartNumber = async (req: Request, res: Response) => {
+  try {
+    const { partNumber } = req.params;
+    
+    // Find and delete the turbo document that contains this part number
+    const turbo = await Turbo.findOneAndDelete({
+      $or: [
+        { 'partNumbers': partNumber },
+        { 'sizeVariants.big.partNumbers': partNumber },
+        { 'sizeVariants.small.partNumbers': partNumber }
+      ]
+    });
+    
+    if (!turbo) {
+      return res.status(404).json({ error: 'Turbo not found.' });
+    }
+    
+    return res.status(200).json({ message: 'Turbo deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting turbo by part number:', error);
+    return res.status(500).json({ error: 'Server error', details: error });
+  }
+};
+
 export const getAllTurbos = async (req: Request, res: Response) => {
   try {
     console.log('Getting all turbos...');
