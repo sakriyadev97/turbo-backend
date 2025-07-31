@@ -139,9 +139,6 @@ export const updateTurbo = async (req: Request, res: Response) => {
 
 export const updateTurboByPartNumber = async (req: Request, res: Response) => {
   try {
-    console.log('updateTurboByPartNumber called with body:', req.body);
-    console.log('Priority field type:', typeof req.body.priority);
-    console.log('Priority field value:', req.body.priority);
     const { partNumber, location, hasSizeOption, partNumbers, sizeVariants, quantity, threshold, priority, operation } = req.body;
 
     if (!partNumber) {
@@ -168,7 +165,6 @@ export const updateTurboByPartNumber = async (req: Request, res: Response) => {
 
     // Handle "add" operation for when orders arrive
     if (operation === 'add' && quantity) {
-      console.log('Adding quantity to existing turbo:', quantity);
       
       // Find which field contains the part number and add to its quantity
       if (turbo.partNumbers && turbo.partNumbers.includes(partNumber)) {
@@ -250,8 +246,7 @@ export const updateTurboByPartNumber = async (req: Request, res: Response) => {
       threshold: threshold || 0,
     };
     
-    console.log('Updating turbo with data:', updateData);
-    console.log('Priority value:', priority, 'Converted to:', !!priority);
+
     
     // Update the turbo document
     const updatedTurbo = await Turbo.findByIdAndUpdate(
@@ -307,12 +302,9 @@ export const deleteTurboByPartNumber = async (req: Request, res: Response) => {
 
 export const getAllTurbos = async (req: Request, res: Response) => {
   try {
-    console.log('Getting all turbos...');
     const turbos = await Turbo.find({});
-    console.log('Found turbos:', turbos.length);
     return res.status(200).json({ turbos });
   } catch (error) {
-    console.error('Error getting turbos:', error);
     return res.status(500).json({ error: 'Server error', details: error });
   }
 };
@@ -424,13 +416,6 @@ export const getLowStockItems = async (req: Request, res: Response) => {
 
 export const sellTurbo = async (req: Request, res: Response) => {
   try {
-    console.log('Sell turbo endpoint called');
-    console.log('Request body:', req.body);
-    console.log('Request method:', req.method);
-    console.log('Request URL:', req.url);
-    console.log('Part number:', req.body.partNumber);
-    console.log('Quantity to sell:', req.body.quantity);
-    
     const { partNumber, quantity } = req.body;
 
     if (!partNumber) {
@@ -498,10 +483,6 @@ export const sellTurbo = async (req: Request, res: Response) => {
       return res.status(500).json({ error: 'Failed to update turbo' });
     }
 
-    console.log('Sell operation completed successfully');
-    console.log('Remaining quantity:', newQuantity);
-    console.log('Sold quantity:', quantity);
-    
     return res.status(200).json({
       message: `Successfully sold ${quantity} turbo(s)`,
       remainingQuantity: newQuantity,
@@ -510,7 +491,6 @@ export const sellTurbo = async (req: Request, res: Response) => {
     });
 
   } catch (error) {
-    console.error('Error selling turbo:', error);
     return res.status(500).json({ error: 'Server error', details: error });
   }
 }; 
