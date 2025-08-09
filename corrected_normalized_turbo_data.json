@@ -1,0 +1,8232 @@
+[
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "5435 970 0028"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "5303 970 0417"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "5303 970 0417"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "5435 970 0012"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "49180 04320"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "5439 970 0027"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "819872"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "827388"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "5303 970 0425",
+      "5303 970 0217"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "753556"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "800854 0006"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "49131 07400",
+      "49131 07420",
+      "49131 07430",
+      "PARTS\n49172 09000\n49172 03000\n49172 03100\n\nMANIFOLD"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.1",
+    "partNumbers": [
+      "49131 09640"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "5303 970 0210 \n5303 970 0337\n5303 970 0182"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "5303 970 0120"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "5438 970 0006",
+      "5438 970 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "5303 970 0521",
+      "5303 970 0492",
+      "5303 970 0411"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "49373 05000\n49373 05001\n49373 05003\n49373 05004\n49373 05005\n49373 05020"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "798128"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "5438 970 0001\n5438 970 0007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "49373 09150"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.2",
+    "partNumbers": [
+      "49131 08600\n49131 08610"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "753420"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "762785"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "5439 970 0127 \n5439 970 0076\n5439 970 0087"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "821042-13"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "5439 970 0070"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "821943 SMALL     \n 821942 BIG"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "742110"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "801374"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.3",
+    "partNumbers": [
+      "821042-12\n821042-10"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "790179"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "807489"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "853603(845275)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "1635 970 0011 \n1635 970 0029\n1635 970 0008\n1635 970 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "796122"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "750441"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "5303 970 0262 \n5303 970 0338\n5303 970 0345"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "806291"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "1635 970 0025"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "830346 0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "795637"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 1.4",
+    "partNumbers": [
+      "806500"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "49335 00850"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "5303 988 0430"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "707240"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "5303 970 0578"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "5314 970 7013",
+      "5314 970 7015",
+      "5314 970 7025"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "708639"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "VN3 IHI"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "5303 970 0339"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "751578"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "49377 07301"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "758639"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.1",
+    "partNumbers": [
+      "756047"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.2",
+    "partNumbers": [
+      "5303 970 0055"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.2",
+    "partNumbers": [
+      "1201 040 5604"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.2",
+    "partNumbers": [
+      "769708"
+    ],
+    "hasSizeOption": false,
+    "quantity": 11,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.2",
+    "partNumbers": [
+      "764609"
+    ],
+    "hasSizeOption": false,
+    "quantity": 17,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.2",
+    "partNumbers": [
+      "5438 970 0005\n5438 970 0018"
+    ],
+    "hasSizeOption": false,
+    "quantity": 12,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "852 606"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "847 009"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1401 402 825"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 214 892"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 117 436"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 015 407"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 014 751"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1450 040 347"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 320 300"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 015 346"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 320 303"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1102 015 459"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "1450 040 457"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "5303 970 0378"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "717345\n751768     703245"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.3",
+    "partNumbers": [
+      "5303 970 0378\n5303 970 0461"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.4",
+    "partNumbers": [
+      "(BIG)\n846015  825758   883860\n\n(SMALL)\n846016 883177 825759"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 2.4",
+    "partNumbers": [
+      "big\n899306  858864\nsmall\n858866   883177"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "813860 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "821866 0004 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "W21(VNT)",
+      "A6510901180(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "789016 0002 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "A6510900886 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "786880 0003 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "49302 05510 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "787390 0008 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "49135 07302(VNT)",
+      "49135 07310(VNT)",
+      "49315 07311(VNT)",
+      "49315 07312 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.1 (VNT)",
+    "partNumbers": [
+      "873732 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "757042(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 20,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "5303 970 0476 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "803955(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "769708(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 17,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "1635 970 0018 (VNT)\n1635 970 0022 (VNT)\n1635 970 0023 (VNT)\n1635 970 0024 (VNT)\n1635 970 0033 (VNT)\n1635 970 0026 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "758351-*(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "819968-0001 (VNT)\n799671 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.2 (VNT)",
+    "partNumbers": [
+      "845888 (VNT)\n830323 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "777318 0001 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "806498 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "704013 43 (VNT)",
+      "717505 26 (VNT)",
+      "723773-5/15/20 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "758351 0003/5/9  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "758351-*  (VNT)\n1102-022-830"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "792290 0003  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "704050 0005 (VNT)",
+      "727455 0002 (VNT)",
+      "743595 0008 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "49377 07440 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "49699 15/23 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "49377 07421(VNT)",
+      "49377 07423(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "838417 0001(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "5303 970 0122(VNT)",
+      "5303 970 0032(VNT)",
+      "5303 970 0144(VNT)",
+      "5303 970 0169(VNT)",
+      "5303 970 0205(VNT)",
+      "5303 970 0208 (VNT)",
+      "839765 0001 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "49131 06003(VNT)",
+      "49131 06004(VNT)",
+      "49131 06006(VNT)",
+      "49131 06007(VNT)",
+      "49131 06008 (VNT)",
+      "49135 05720(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "49135 05640/60/71\n49135 05720 \n(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.3 (VNT)",
+    "partNumbers": [
+      "839765 0001 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "802028 0009 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "704013 13 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "VV19 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "04L253010B (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "760698 0002/3/4 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "763647(VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "717506 0027 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "VJ36/37 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "49135 02652 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "757886(VNT)",
+      "765261(VNT)",
+      "756867(VNT)",
+      "762463(VNT)",
+      "758532(VNT)",
+      "1102-017-833\n(13 BLADE/ SPACER 7.7mm)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "806094 0010 (VNT)\n829440 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "5438 970 0007 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "806500"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 3.4 (VNT)",
+    "partNumbers": [
+      "49377 07460 (VNT)\n49377 07535 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "853603 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "804986 (VNT)",
+      "799672 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "1635 970 0002 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "5440 970 0002 (VNT)",
+      "5440 970 0007 (VNT)",
+      "5440 970 0021 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "775517 (VNT)",
+      "804485 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "819872 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "753420 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "785448 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "49335 00500  (VNT)\n49335 00600 (VNT)\n49335 00610 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "1401 402 390\nSENSOR"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "BM196 (VNT)\n04L253022B"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "5303 970 0521 (VNT)",
+      "5303 970 0492 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "5439 970 0098 (VNT)\n5439 970 0086 (VNT)\n5439 970 0114 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "819976 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "765985 777853 vnt\n1102-222-830"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.1 (VNT)",
+    "partNumbers": [
+      "1000 970 0366\n1000 970 0210       (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "822088 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "724930 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 15,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "831120 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "5440 970 0024 (VNT)",
+      "5440 970 0043 (VNT)",
+      "5440 970 0041 (VNT)",
+      "5440 970 0038 (VNT)",
+      "5303 970 0417 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "5303 970 0139 (VNT)\n53039700139 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "04L253010B (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "5303 970 0137 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "8514266 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.2 (VNT)",
+    "partNumbers": [
+      "838417 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "1630 970 0003 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "5438 970 0005 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "777250 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "712541 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "5303 970 0109 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "49335 01700 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "49335 01960 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 11,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "7812321 03 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "8518204 (VNT)",
+      "8512379 (VNT)",
+      "7812321 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "5303 970 0457 (VNT)\n5303 970 0210\n5303 970 0338"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "1638 970 0015 (VNT)\n1638 970 0021 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "704049 0001 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.3 (VNT)",
+    "partNumbers": [
+      "852072 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "VNT"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "3000 016 017  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "3000 016 016  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "49135 05671  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "BV 45 (VNT)",
+      "K03 0210  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "753392 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "49135 07310 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "787556 (VNT)\n1102-017-838"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "742110 (VNT)",
+      "756867 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "100 00363 600  (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "454135 162 (VNT)",
+      "454135 017 (VNT)",
+      "454135 833 (VNT)",
+      "5439 970 0009 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "49377 00510 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "802774 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 4.4 (VNT)",
+    "partNumbers": [
+      "802774  0008 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "731877-1"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "49477 01214"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "731877 0009"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "8518204",
+      "8513122",
+      "34655487 04",
+      "1450 040 934"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "5440 970 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "1638 970 0008 \n0016\n0019\n0020"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "833714"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "5440 970 0026"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "5435 970 0026"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "5303 970 0181"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.1",
+    "partNumbers": [
+      "833714 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "NO CLAMP \n1745 970 0002\n1745 970 0006\n1745 970 0007\n1745 970 0010\n1745 970 0011\n1745 970 0018\n1745 970 0020\n1745 970 0022\n1745 970 0023\n1745 970 0026\n1745 970 0028\n1745 970 0034\n1745 970 0040"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "NO CLAMP\n1631 970 0010\n1631 970 0018\n1631 970 0052"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "5316 970 0069 \n5316 970 0031 \n5316 970 0063 \n5316 970 0073 \n5316 970 0077"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "04B253019R"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "762785"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "5435 970 0060",
+      "5435 970 0045",
+      "5435 970 0053",
+      "5435 970 0065",
+      "5439 710 0506"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "5435 970 0045",
+      "5435 970 0065"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "49477 02025\n49477 02010\n49477 02011\n49477 02012\n49477 02013"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "806094"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "762965"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "5440 970 0009",
+      "5440 970 0001",
+      "5440 970 0006",
+      "753392"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "767378"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "806094 0010"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "835109"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "5440 970 0010",
+      "5303 970 0472\n522/247/285/\n323/365/403"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.2",
+    "partNumbers": [
+      "5303 970 0523\n388/310/364/\n284/246"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "49335 00500",
+      "49335 00600",
+      "49335 00610"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "WITH CLAMP\n1631 970 0004\n1631 970 0011\n1631 970 0013\n1631 970 0022\n1631 970 0060\n1631 970 0066"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "758351 -19\n765985"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "1855 970 0042"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "819977"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "5440 970 0046",
+      "5440 970 0044",
+      "5440 970 0042",
+      "5440 970 0039",
+      "5440 970 0034",
+      "5440 970 0032",
+      "5440 970 0025",
+      "WITH CLAMP\n1745 970 0002\n1745 970 0007\n1745 970 0009\n1745 970 0011\n1745 970 0013\n1745 970 0015\n1745 970 0039"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "1853 988 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "49135 05850"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "820021\n809200"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.3",
+    "partNumbers": [
+      "49335 02052"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "5440 970 0043",
+      "0024/0031/0033/0038/0041",
+      "8513635"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "8514266",
+      "8511719"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "5435 970 0047 \n5435 970 0039\n5435 970 0041\n5435 970  0056\n5435 970  0055\n5435 970 0066"
+    ],
+    "hasSizeOption": false,
+    "quantity": 18,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "7625161",
+      "8643131"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "833716",
+      "8513585"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "8512379  \nRHV4 T39"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "833718"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "758352"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "7812321"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "5326 970 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "765985"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "49135 05720 \ntf35 57"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "49135 05620"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "5326 970 0000"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "1858 970 0000"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "7633795"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 5.4",
+    "partNumbers": [
+      "1858 970 0007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "49131 05313"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "1761178"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "49373 02002 \n49373 02004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "702315 0013"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "806497",
+      "783248"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "49135 08200",
+      "49135 06000"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "852072"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "5303 970 0446",
+      "5303 970 0245"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "763647"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.1",
+    "partNumbers": [
+      "1858 970 0007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "5304 970 0033"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "802733 0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "49377 00500"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "752610"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "831157"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "5303 970 0394 \n5303 970 0634"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "5303 970 0154",
+      "5303 970 0241",
+      "5303 970 0288"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "728680"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "838417\n838452"
+    ],
+    "hasSizeOption": false,
+    "quantity": 15,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "760774\n753847\n765993"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "753519"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "12328700"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "1000 970 0257\n1000 970 0258\n1000 970 0305\n1000 970 0386\n1000 970 0389\n1000 970 0395\n1000 970 0396\n1000 970 0438"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.2",
+    "partNumbers": [
+      "1635 970 0030"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "787556"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "786880"
+    ],
+    "hasSizeOption": false,
+    "quantity": 16,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "49377 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "850229"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "726194"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "706499"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "5439 970 0123",
+      "5439 970 0133",
+      "5439 970 0144"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "5303 970 0288"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "822182"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "49191 05400\n49191 05402"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "MANIFOLD"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "49335 08810"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.3",
+    "partNumbers": [
+      "850840\n850841"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.4",
+    "partNumbers": [
+      "714467"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.4",
+    "partNumbers": [
+      "5303 970 0565\n5303 970 0154\n5303 970 0237\n5303 970 0250\n5303 970 0293\n5303 710 0565"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.4",
+    "partNumbers": [
+      "758226"
+    ],
+    "hasSizeOption": false,
+    "quantity": 21,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 6.4",
+    "partNumbers": [
+      "1639 970 0038\n0020\n0018\n0006\n0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "1000 970 0139",
+      "1000 970 0167",
+      "1000 970 0166",
+      "1000 970 0140",
+      "1000 970 0072"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "5304 970 0057 \n5439 970 0049"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "850282\n883960"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "A651 090 0886   \nA651 090 3400\nAL 0058"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "5303 970 0171"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "709 837"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "727461"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.1",
+    "partNumbers": [
+      "7636784"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "5304 970 0086"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "727211"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "5439 970 0075",
+      "5439 970 0099",
+      "5439 970 0106",
+      "5439 970 0120"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "770895"
+    ],
+    "hasSizeOption": false,
+    "quantity": 12,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "765155 0004",
+      "765155 0007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "761399",
+      "757608",
+      "765156",
+      "765155"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "781743"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "AL0058"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "5439 970 0075"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.2",
+    "partNumbers": [
+      "5304 970 0094"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "794877"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "VV14"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "802774"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "742693"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "759688"
+    ],
+    "hasSizeOption": false,
+    "quantity": 13,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "831120\n882740\n894474    873798"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.3",
+    "partNumbers": [
+      "1000 970 0366 (BIG)\n1000 970 0366 (SMALL)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "A6510900086",
+      "VV20"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "A2700902280",
+      "A2700902780"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "5303"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "5304 710 5085"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "1855 970 0002 \n1855 970 0010"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "727238 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "A2710903180"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "49135 05122",
+      "49135 05132"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "806498"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "816841\nAL 0077\nA6420901886"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "A6510900786\nAL - 0059\nA6510900586"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "VV19"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "AL0067\n A270090080"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "A6510903580"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 7.4",
+    "partNumbers": [
+      "826830\nAL-0078"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "801891 0001 (ACTUATORS)",
+      "801891 0004 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "806850\n(ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "819872 0001  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "5825 110 4188  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "5439 970 0070  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "1000 970 0036 (ACTUATORS)\nSMALL"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "49373 18100  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "789016 0001 (ACTUATORS)",
+      "789016 0002  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "724294 0007  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "753286 0002 (ACTUATORS)",
+      "729325 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.1  (ACTUATORS)",
+    "partNumbers": [
+      "434855 0012 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "813860 (ACTUATORS)",
+      "821866 (ACTUATORS)",
+      "794080 0098  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "5438 970 0013 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "758219 (ACTUATORS)",
+      "717858 (ACTUATORS)",
+      "434855-12  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "BM70B (ACTUATORS)",
+      "04L253019Q  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "803955-*  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "49131 18960 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "5825 110 4169  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "03L198716F (ACTUATORS)",
+      "5439 970 0098 (ACTUATORS)",
+      "5439 970 0114 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "784011-* (ACTUATORS)",
+      "806291-*  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "806498 0003 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "775517 0001 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "873970\n794081 0148\n873767\n830324\n (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "794080 0098 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "785448 0005 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "794081 0148"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.2 (ACTUATORS)",
+    "partNumbers": [
+      "753420 (ACTUATOR)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "768652 0005 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "830323 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "49377 18550  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "06K145725S  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "5303 970 0521 (ACTUATORS)",
+      "5303 970 0092 (ACTUATORS)",
+      "5303 970 0411 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "49172 18600  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "49377 07515 (ACTUATORS)",
+      "49377 07510 (ACTUATORS)",
+      "49377 07530 (ACTUATORS)",
+      "49377 07535 (ACTUATORS)",
+      "5438 970 0018 (ACTUATORS)",
+      "5438 970 0005 (ACTUATORS)",
+      "5439 970 0007 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "49135 06010 (ACTUATORS)",
+      "49135 06015 (ACTUATORS)",
+      "49135 06017 (ACTUATORS)",
+      "49135 06030 (ACTUATORS)",
+      "49135 06035 (ACTUATORS)",
+      "49135 06037 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "49172 18600 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "703785 0029  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "5439 970 0071 (ACTUATOR)\n5439 970 0072"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.3  (ACTUATORS)",
+    "partNumbers": [
+      "5303 970 0086 (ACTUATOR)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "1635 970 0002  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "807489 0002  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "5439 970 0082  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "775517 000  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "806497 0003  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "5439 970 0127  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "751851 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "723455 0027 (ACTUATORS)",
+      "753556 (ACTUATORS)",
+      "756047 (ACTUATORS)",
+      "782053 (ACTUATORS)",
+      "724290 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "723455 0027  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "5440 970 0036  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "BV43  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "5303 970 0620 (ACTUATORS)",
+      "5303 970 0414  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "49131 05313  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 8.4  (ACTUATORS)",
+    "partNumbers": [
+      "781151 0039 (ACTUATORS)\n792290",
+      "AL0067 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.1",
+    "partNumbers": [
+      "712541"
+    ],
+    "hasSizeOption": false,
+    "quantity": 12,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.1",
+    "partNumbers": [
+      "454191"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.1",
+    "partNumbers": [
+      "5316 970 0016",
+      "5316 970 0009"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.2",
+    "partNumbers": [
+      "5439 970 0065",
+      "5439 970 0089",
+      "5439 970 0045",
+      "5439 710 0506"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.2",
+    "partNumbers": [
+      "704361",
+      "434766 0012"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.2",
+    "partNumbers": [
+      "5435 970 0039",
+      "5435 970 0041",
+      "5435 970 0047",
+      "0056   0055  0066"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.2",
+    "partNumbers": [
+      "5435 970 0048",
+      "8514666"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.2",
+    "partNumbers": [
+      "5435 970 0030",
+      "5435 970 0026",
+      "5435 970 0036"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.2",
+    "partNumbers": [
+      "7643147"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.3",
+    "partNumbers": [
+      "8512379  (USED)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.3",
+    "partNumbers": [
+      "803649 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.3",
+    "partNumbers": [
+      "758353"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.4",
+    "partNumbers": [
+      "777853"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.4",
+    "partNumbers": [
+      "753392"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.4",
+    "partNumbers": [
+      "742730"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.4",
+    "partNumbers": [
+      "5326 970 0005",
+      "5326 970 7109",
+      "5326 710 0525"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.4",
+    "partNumbers": [
+      "5326 710 0523"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.4",
+    "partNumbers": [
+      "5326 710 0525"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 9.5",
+    "partNumbers": [
+      "1273 970 0010 /0018/0001/0009"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.1",
+    "partNumbers": [
+      "725364"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.1",
+    "partNumbers": [
+      "17201 33010"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.1",
+    "partNumbers": [
+      "819976"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.1",
+    "partNumbers": [
+      "750080 0007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.2",
+    "partNumbers": [
+      "5326 970 0008\n5326 970 0010\n5326 970 0011\n5326 970 0014\n5326 970 0015"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.2",
+    "partNumbers": [
+      "5326 970 0010\n5326 970 0011\n5326 970 0014\n5326 970 0015"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.3",
+    "partNumbers": [
+      "822088"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.3",
+    "partNumbers": [
+      "TH-CO001-1s"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.4",
+    "partNumbers": [
+      "1450 03 902"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.4",
+    "partNumbers": [
+      "777250 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.4",
+    "partNumbers": [
+      "760497"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 10.4",
+    "partNumbers": [
+      "750431"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.1",
+    "partNumbers": [
+      "764609 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.1",
+    "partNumbers": [
+      "5303 970 0457"
+    ],
+    "hasSizeOption": false,
+    "quantity": 16,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.1",
+    "partNumbers": [
+      "5303 970 0457",
+      "5303 970 0657"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.1",
+    "partNumbers": [
+      "5303 970 0457"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.1",
+    "partNumbers": [
+      "767835"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "768652"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "5435 970 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "5430 970 0000"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "5435 970 0027",
+      "5435 970 0037"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "768652"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "799171"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.2",
+    "partNumbers": [
+      "887157"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.3",
+    "partNumbers": [
+      "807068"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.3",
+    "partNumbers": [
+      "811311",
+      "812812",
+      "799502",
+      "810944",
+      "814999",
+      "786825"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.3",
+    "partNumbers": [
+      "788290 0001",
+      "781351"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.4",
+    "partNumbers": [
+      "5303 970 0115",
+      "5303 970 0114",
+      "5303 970 0090",
+      "5303 970 0089",
+      "5303 970 0078",
+      "5303 970 0067",
+      "5303 970 0066",
+      "5303 970 0699"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.4",
+    "partNumbers": [
+      "839765"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.4",
+    "partNumbers": [
+      "804963 0003",
+      "804963"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.4",
+    "partNumbers": [
+      "46352758\n46349293"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.4",
+    "partNumbers": [
+      "5303 970 0149"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.4",
+    "partNumbers": [
+      "812811  811310  827727  793996",
+      "804963",
+      "870248"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.5",
+    "partNumbers": [
+      "5435 710 5046"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.5",
+    "partNumbers": [
+      "785998 0010"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.5",
+    "partNumbers": [
+      "VL37",
+      "VL39"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.5",
+    "partNumbers": [
+      "49135 00720"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.5",
+    "partNumbers": [
+      "857278"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 11.5",
+    "partNumbers": [
+      "5438 970 0008"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "814698-4\n814698-1"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "779591"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "822072 0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "822072 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "49130 00103 \n49130 00100\n49130 00105\n 49130 00106\n49130 00107\n49130 00108\n 49130 00110\n49130 00112\n49130 00114\n49130 00120\n49130 00121"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "5438 970 0008\n5438 970 0028"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.1",
+    "partNumbers": [
+      "49180 04070"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.2",
+    "partNumbers": [
+      "40006975"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.2",
+    "partNumbers": [
+      "5435 970 0014",
+      "5435 970 0015"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.2",
+    "partNumbers": [
+      "788778"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.2",
+    "partNumbers": [
+      "814698-2\nWATER COOLED"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.2",
+    "partNumbers": [
+      "844572"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.3",
+    "partNumbers": [
+      "829754\n836250\n835401"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.3",
+    "partNumbers": [
+      "5438 970 0003",
+      "5438 970 0009",
+      "5438 970 0011",
+      "5438 970 0013",
+      "5438 970 0021"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.3",
+    "partNumbers": [
+      "789533"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.3",
+    "partNumbers": [
+      "5304 970 0049"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.4",
+    "partNumbers": [
+      "720168"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.4",
+    "partNumbers": [
+      "5435 710 5046"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.4",
+    "partNumbers": [
+      "786137"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.4",
+    "partNumbers": [
+      "5304 970 0059 \n5304 970 0184\n5304 970 0200"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.4",
+    "partNumbers": [
+      "898102   VIFC"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "49477 01600",
+      "``````````````````````````````````````````````````````````````````````"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "5304 970 0024"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "786825 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "49131 06004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "49131 06007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "5303 970 0110"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "781504",
+      "853215"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 12.5",
+    "partNumbers": [
+      "49477 01610"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.1",
+    "partNumbers": [
+      "781914 0041"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.1",
+    "partNumbers": [
+      "5303 970 0653"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.1",
+    "partNumbers": [
+      "1639 970 0016"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.1",
+    "partNumbers": [
+      "780502"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.1",
+    "partNumbers": [
+      "5303 970 0432",
+      "5303 970 0435"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "49135 07310",
+      "49135 07312"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "49135 07310"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "28231 27810"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "823665"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "5303 970 0358"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "5303 970 0357",
+      "5303 970 0008"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.2",
+    "partNumbers": [
+      "5303 970 0357"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.3",
+    "partNumbers": [
+      "5303 970 0145",
+      "5303 970 0127"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.3",
+    "partNumbers": [
+      "775274\n-2\n-3"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.3",
+    "partNumbers": [
+      "785448"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.3",
+    "partNumbers": [
+      "5439 970 0107"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.4",
+    "partNumbers": [
+      "824168-1"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 13.4",
+    "partNumbers": [
+      "824168-2"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "750441"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "740611"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "5440 970 0030"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "839827"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "856652"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "5439 970 0107"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "1635 970 0028\n843814"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.1",
+    "partNumbers": [
+      "49477"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.2",
+    "partNumbers": [
+      "794097-1"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.2",
+    "partNumbers": [
+      "775274"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.3",
+    "partNumbers": [
+      "794097-2",
+      "794097-3"
+    ],
+    "hasSizeOption": false,
+    "quantity": 13,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.5",
+    "partNumbers": [
+      "1635 970 0014"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.5",
+    "partNumbers": [
+      "757886"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.5",
+    "partNumbers": [
+      "5303 970 0353",
+      "5303 970 0655",
+      "28500 4A700"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 14.5",
+    "partNumbers": [
+      "5303 970 0226",
+      "5303 970 0353"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5439 970 0058 \n5439 970 0057"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5439 970 0054"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "733783"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5439 970 0072 \n5439 970 0071"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "433395-7",
+      "43395-20"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "1635 970 0002 \n1635 970 0012 \n1635 970 0040"
+    ],
+    "hasSizeOption": false,
+    "quantity": 12,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5303 970 0134"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5304 970 0064"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5439 988 0075"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "805713"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5304 970 0125big",
+      "5304 970 0143big",
+      "1000 970 0030",
+      "0051/0068/0069/0096/0097",
+      "0100/0101/0112/0113/0114/0115"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5304 970 0055",
+      "5304 970 0051"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.1",
+    "partNumbers": [
+      "5439 970 0016"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "06K145722H\n1450 050 908"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "5304 970 0144"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "5439 970 0098/ 114"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "775517"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "854870"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "724930",
+      "756062",
+      "712078",
+      "716216",
+      "720855",
+      "751851"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "BM70B"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "BM65B"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "06H145702Q   \n06H145702S\n1450 050 905"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "5303 970 0543\n5303 970 0477\n5303 970 0478\n5303 970 0621\n5303 970 0443"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.2",
+    "partNumbers": [
+      "810822"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5440 970 0022",
+      "5440 970 0021",
+      "5440 970 0008",
+      "5440 970 0007",
+      "5440 970 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "785448"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5303 970 0207",
+      "5303 970 0137",
+      "5303 970 0129"
+    ],
+    "hasSizeOption": false,
+    "quantity": 11,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5303 970 0138",
+      "5303 970 0189",
+      "5303 970 0131"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5439 970 0060"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "757042"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5303 970 0137"
+    ],
+    "hasSizeOption": false,
+    "quantity": 12,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5303 970 0190\n5303 970 0133\n5303 970 0140"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.3",
+    "partNumbers": [
+      "5303 970 0099"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "5303 970 0109"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "792290"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "5303 970 0132",
+      "5303 970 0139",
+      "5303 970 0205"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "717858\n758219"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "818987"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "817047",
+      "804888",
+      "818987"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "716885  720931"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "765261",
+      "756867"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 15.4",
+    "partNumbers": [
+      "827334"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "5304 970 0105"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "817081",
+      "818988"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "830245"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "5303 970 0099"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "5303 970 0118"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "825965"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "1638 970 0015",
+      "1638 970 0021"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "49180 01270"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "888580"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "06H145702L"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "06H145702Q"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "819968"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "5303 970 0106"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.1",
+    "partNumbers": [
+      "1630 970 0003 \nBV30 66A 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "079145704E"
+    ],
+    "hasSizeOption": false,
+    "quantity": 10,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "1000 970 0099"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "079145704F"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "5303 970 0441"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "5303 970 0385",
+      "5303 970 0359",
+      "5303 970 0324"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "1850 970 0006      (BIG)",
+      "1850 970 0010      (BIG)",
+      "1850 970 0012 [BIG]\n1850 970 0015 [BIG]",
+      "1635 970 0018/16/23/24 (SMALL)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "5303 970 0290\n5303 970 0291\nVA93"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "830324",
+      "873767"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "5304 970 0139",
+      "5304 970 0129",
+      "5304 970 0103"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "830323",
+      "845888",
+      "873970"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "721021"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "821866   \n819891"
+    ],
+    "hasSizeOption": false,
+    "quantity": 15,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.2",
+    "partNumbers": [
+      "830323 0006"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "803955"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "805713"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "1635 970 0035"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "789016"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "729325"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "5304 970 0025",
+      "5304 970 0026"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "5304 970 0028",
+      "5304 970 0029"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "5303 970 0105"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "BV43"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "799671"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.3",
+    "partNumbers": [
+      "5304 970 0022"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.4",
+    "partNumbers": [
+      "760699"
+    ],
+    "hasSizeOption": false,
+    "quantity": 12,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.4",
+    "partNumbers": [
+      "760698"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.4",
+    "partNumbers": [
+      "06Q145703C/F"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 16.4",
+    "partNumbers": [
+      "05L253019F"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5303 970 0620"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "454064"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "1000 970 0065"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5439 970 0012",
+      "5439 970 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "JHJ 03F145701T"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5304 970 0032"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "06L145720"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5435 710 0511"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "079145704e"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5303 970 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "454231"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5304 710 5066",
+      "100 00084 500"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.1",
+    "partNumbers": [
+      "5303 970 0260\n5303 970 0542"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "49377 07423"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "5303 710 0516"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "5439 970 0006",
+      "5439 970 0007",
+      "5439 970 0009",
+      "5439 970 0010",
+      "5439 970 0011",
+      "5439 970 0007"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "5303 710 0537"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "49373 01001",
+      "49373 01002",
+      "49373 01003",
+      "49373 01004",
+      "49373 01005",
+      "49373 01003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "804986",
+      "799672"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "49377 07535"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "1000 970 0098",
+      "1000 970 0064",
+      "1000 970 0027"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "1000 970 0098",
+      "1000 970 0064"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "769909\n776469\n776470\n769705"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "5439 970 0016"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "713673",
+      "713672",
+      "768331",
+      "713673",
+      "776469"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "1633 970 0018"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.2",
+    "partNumbers": [
+      "49377  07420   07421     07422"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.3",
+    "partNumbers": [
+      "813860    \n 847671\n829847"
+    ],
+    "hasSizeOption": false,
+    "quantity": 16,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.3",
+    "partNumbers": [
+      "5439 970 0022     \n5439 970 0020"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.3",
+    "partNumbers": [
+      "BM196\n04L253022B"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.3",
+    "partNumbers": [
+      "833844\n839077"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.3",
+    "partNumbers": [
+      "5303 970 0324\n5303 970  0359\n5303 970 0385\n5303 970 0414\n5303 970 0441\n5303 970 0475\n5303 970 0476"
+    ],
+    "hasSizeOption": false,
+    "quantity": 14,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.3",
+    "partNumbers": [
+      "1853 970 0054"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.4",
+    "partNumbers": [
+      "49377 07535"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.4",
+    "partNumbers": [
+      "1635 970 0020"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.4",
+    "partNumbers": [
+      "49180 01240"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.4",
+    "partNumbers": [
+      "769701"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.4",
+    "partNumbers": [
+      "06J145702K"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 17.4",
+    "partNumbers": [
+      "06j145702k"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "756090 0001  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "750431 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "5825 110 5097  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "5303 970 0122  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "BV43  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "49131 05403  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "G107 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "(ACTUATORS)\n850840\n850841"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.1 (ACTUATORS)",
+    "partNumbers": [
+      "(ACTUATORS)\n845275"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G88 (ACTUATORS)\nG88 COPY"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G290 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G185 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G125 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G34 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G20 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.2 (ACTUATORS)",
+    "partNumbers": [
+      "G103 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G001  (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G277 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 8,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G74 (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G59 (ACTUATORS)copy\nG59"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G 25 [ACTUATORS]"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G77 [ACTUATORS]"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.3 (ACTUATORS)",
+    "partNumbers": [
+      "G13 [ACTUATORS]"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "277 (420) (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "211 (412) (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 16,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "G219 (412) (ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 17,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "787556\nG-88                  \n(ACTUATORS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 9,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "G26 [ACTUATORS]"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "G105[ACTUATORS]"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.4 (ACTUATORS)",
+    "partNumbers": [
+      "G206[ACTUATORS]"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.5",
+    "partNumbers": [
+      "BLUE BOX LABELLED:",
+      "041 20234"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.5",
+    "partNumbers": [
+      "SENSOR\n756047-1\n760774-2\n714306-6"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 18.5",
+    "partNumbers": [
+      "SENSOR\n49373 02000\n49373 02001\n49373 02002\n49373 02003\n49373 02004\n49373 02012\n49373 02013\n49373 02022\n49373 02023"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 19.3 ACTUATOR",
+    "partNumbers": [
+      "792290 (MANIFOLDS)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 19.3 ACTUATOR",
+    "partNumbers": [
+      "ACTUATOR\n5440 0030"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 19.3 ACTUATOR",
+    "partNumbers": [
+      "ACTUATOR\n49477 01102"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 19.3 ACTUATOR",
+    "partNumbers": [
+      "ACTUATOR\n49477 01203"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.1",
+    "partNumbers": [
+      "17200 97202"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.1",
+    "partNumbers": [
+      "GT SHAFT MISSING"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.2",
+    "partNumbers": [
+      "49135 08461\n49335-01010\n49135-08460"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.3",
+    "partNumbers": [
+      "5435 710 0501",
+      "5435 710 0502"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.3",
+    "partNumbers": [
+      "TD04HL 16T"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.3",
+    "partNumbers": [
+      "VJ41"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.3",
+    "partNumbers": [
+      "49131 06703",
+      "49131 06900",
+      "49131 06800"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.3",
+    "partNumbers": [
+      "49377 08352"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.3",
+    "partNumbers": [
+      "49377 08520"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.4",
+    "partNumbers": [
+      "17201 0L030"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.4",
+    "partNumbers": [
+      "17201 30620"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.4",
+    "partNumbers": [
+      "17201 0L030",
+      "17201 30030"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.4",
+    "partNumbers": [
+      "4933 1700"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.4",
+    "partNumbers": [
+      "49335 04000"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 20.5",
+    "partNumbers": [
+      "804968.0"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.1",
+    "partNumbers": [
+      "49130 01930"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.1",
+    "partNumbers": [
+      "VJ40"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.1",
+    "partNumbers": [
+      "VJ44"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.1",
+    "partNumbers": [
+      "810356"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.1",
+    "partNumbers": [
+      "1631 970 0008"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.1",
+    "partNumbers": [
+      "49135 02652"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.2",
+    "partNumbers": [
+      "5304 710 9901\nK0422\n881\n882"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.2",
+    "partNumbers": [
+      "832635\n832637"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.2",
+    "partNumbers": [
+      "49335 01700"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.2",
+    "partNumbers": [
+      "49335 01000",
+      "49335 01001",
+      "49335 01002",
+      "49335 01003",
+      "VT17"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.2",
+    "partNumbers": [
+      "832636\n832636/7"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.3",
+    "partNumbers": [
+      "810357"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.3",
+    "partNumbers": [
+      "VF39"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.3",
+    "partNumbers": [
+      "49335 01122"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.3",
+    "partNumbers": [
+      "49335 01122",
+      "49335 08590"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.3",
+    "partNumbers": [
+      "49377 08120"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.3",
+    "partNumbers": [
+      "49335 01011"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.4",
+    "partNumbers": [
+      "JX8032257"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.4",
+    "partNumbers": [
+      "766259"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.4",
+    "partNumbers": [
+      "721164"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.4",
+    "partNumbers": [
+      "721164",
+      "721164-0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.4",
+    "partNumbers": [
+      "VZ66"
+    ],
+    "hasSizeOption": false,
+    "quantity": 21,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.5",
+    "partNumbers": [
+      "VB14"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.5",
+    "partNumbers": [
+      "VB16"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.5",
+    "partNumbers": [
+      "727210"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.5",
+    "partNumbers": [
+      "VB19"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 21.5",
+    "partNumbers": [
+      "VB15"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.1",
+    "partNumbers": [
+      "829440"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.1",
+    "partNumbers": [
+      "1000 970 0131"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.1",
+    "partNumbers": [
+      "1635 970 0006"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.1",
+    "partNumbers": [
+      "753546\n0014\n0023"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.2",
+    "partNumbers": [
+      "778401"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.2",
+    "partNumbers": [
+      "793829"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.2",
+    "partNumbers": [
+      "1635 970 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.2",
+    "partNumbers": [
+      "5303 970 0615"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.2",
+    "partNumbers": [
+      "778400"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.2",
+    "partNumbers": [
+      "17th"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.3",
+    "partNumbers": [
+      "49477 01203"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.3",
+    "partNumbers": [
+      "BV50",
+      "5304 710 0531"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.3",
+    "partNumbers": [
+      "778400"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.3",
+    "partNumbers": [
+      "832861"
+    ],
+    "hasSizeOption": false,
+    "quantity": 4,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.3",
+    "partNumbers": [
+      "1000 970 0130"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.4",
+    "partNumbers": [
+      "824756\n824757"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.4",
+    "partNumbers": [
+      "802773"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.4",
+    "partNumbers": [
+      "49335 01960\n49335 01940"
+    ],
+    "hasSizeOption": false,
+    "quantity": 21,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.5",
+    "partNumbers": [
+      "465175",
+      "465171"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.5",
+    "partNumbers": [
+      "788479"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.5",
+    "partNumbers": [
+      "793829 (Used)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.5",
+    "partNumbers": [
+      "452239",
+      "433467 0008"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 22.5",
+    "partNumbers": [
+      "800089 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.1",
+    "partNumbers": [
+      "836264"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.1",
+    "partNumbers": [
+      "1638 970 0015",
+      "1638 970 0021"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.1",
+    "partNumbers": [
+      "824754",
+      "827153",
+      "824755"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.1",
+    "partNumbers": [
+      "1635 970 0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.1",
+    "partNumbers": [
+      "1850 970 0002\n1850 970 0013\n1850 970 0021\n1850 970 0026"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.1",
+    "partNumbers": [
+      "823024 0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.2",
+    "partNumbers": [
+      "49189 02914",
+      "49189 02913",
+      "49189 09160"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.2",
+    "partNumbers": [
+      "821479 5003S",
+      "95812302540"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.2",
+    "partNumbers": [
+      "789773",
+      "789773 0026"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.2",
+    "partNumbers": [
+      "5303 970 0066",
+      "5303 970 0114",
+      "5303 710 0519"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.2",
+    "partNumbers": [
+      "1853 970 0041\n0071"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.2",
+    "partNumbers": [
+      "759394"
+    ],
+    "hasSizeOption": false,
+    "quantity": 3,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.3",
+    "partNumbers": [
+      "8981506883"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.3",
+    "partNumbers": [
+      "836825"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.3",
+    "partNumbers": [
+      "1850 970 0021",
+      "1850 970 0013"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.3",
+    "partNumbers": [
+      "760680"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.3",
+    "partNumbers": [
+      "820371\n840213"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.4",
+    "partNumbers": [
+      "5440 970 0014"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.4",
+    "partNumbers": [
+      "5303 970 0010"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.4",
+    "partNumbers": [
+      "5303 970 0037"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.4",
+    "partNumbers": [
+      "757779",
+      "757779 0004",
+      "757779 0010",
+      "757779 0020",
+      "757779 0021",
+      "757779 0022"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.5",
+    "partNumbers": [
+      "8981506872"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.5",
+    "partNumbers": [
+      "5303 970 0491"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 23.5",
+    "partNumbers": [
+      "1000 970 0434 (BIG)\n1000 970 0434 (SMALL)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "5304 970 0032 (VNT)"
+    ],
+    "hasSizeOption": false,
+    "quantity": 6,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "700960"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "792290 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "49172 16200"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "847 009"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "852 606"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.1",
+    "partNumbers": [
+      "GTB17"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "700593-1"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "5304 151 5721"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "5304 150 5702"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "774906 0004"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "727461",
+      "701353-3"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "726173 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "BV54"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "721164"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.2",
+    "partNumbers": [
+      "5304 151 5708"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "VNT15-25"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "78685"
+    ],
+    "hasSizeOption": false,
+    "quantity": 5,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "67616"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "72176"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "73900"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "57149"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "RHF4V"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "VV14"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.3",
+    "partNumbers": [
+      "72146"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "70582"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "85890"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "81381"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "36817"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "KP\nBV39"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "KP\nBV35"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 24.4",
+    "partNumbers": [
+      "KP\nBV31"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "819891 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "765155"
+    ],
+    "hasSizeOption": false,
+    "quantity": 7,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "OD43",
+      "ID37.5",
+      "Tip 8.3"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "784011 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "777159 0002/ 3"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "700960-*"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "758219 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.1 VNT",
+    "partNumbers": [
+      "5304 120 5018"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "TF035",
+      "49135-057"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "750431"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "806094 0010"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "5439 120 5011"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "753519"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "GT 1646V"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "704580-3"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "434533-2"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.2",
+    "partNumbers": [
+      "752610 0012"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "737689 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "49135 05761"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "702492 0001"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "702489-1",
+      "702489-5"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "784369 0002",
+      "787571 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "704765 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "TD02"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "716885",
+      "762060"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "704768 0005"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "786556 0002"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "756047-4",
+      "760774-2",
+      "714306-6"
+    ],
+    "hasSizeOption": false,
+    "quantity": 0,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.3",
+    "partNumbers": [
+      "735492 0003"
+    ],
+    "hasSizeOption": false,
+    "quantity": 1,
+    "threshold": 0,
+    "priority": false
+  },
+  {
+    "location": "BAY 25.4",
+    "partNumbers": [
+      "TH CO001 1s"
+    ],
+    "hasSizeOption": false,
+    "quantity": 2,
+    "threshold": 0,
+    "priority": false
+  }
+]

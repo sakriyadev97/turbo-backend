@@ -1,0 +1,14 @@
+{
+  "name": "turbo-import",
+  "version": "1.0.0",
+  "description": "Import script for turbo inventory data",
+  "main": "import-turbos-simple.js",
+  "scripts": {
+    "import": "node import-turbos-simple.js",
+    "import-advanced": "node import-turbos.js"
+  },
+  "dependencies": {
+    "mongoose": "^6.0.0",
+    "csv-parser": "^3.0.0"
+  }
+} 
