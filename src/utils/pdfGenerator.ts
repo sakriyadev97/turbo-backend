@@ -54,10 +54,19 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
     doc.setFillColor(30, 64, 175); // Blue background
     doc.rect(0, 0, pageWidth, 40, 'F');
     
-    // Company logo (actual logo.png file)
+    // Company logo (using base64 encoded logo)
     try {
-      // Add logo image to PDF
-      doc.addImage('./logo.png', 'PNG', 15, 5, 30, 30);
+      // Read logo file and convert to base64
+      const fs = require('fs');
+      const path = require('path');
+      // When compiled, __dirname points to dist/utils, so we need to go up two levels to reach the backend root
+      const logoPath = path.join(__dirname, '../../logo.png');
+      const logoBuffer = fs.readFileSync(logoPath);
+      const base64Logo = logoBuffer.toString('base64');
+      
+      // Add logo using base64 data
+      doc.addImage(`data:image/png;base64,${base64Logo}`, 'PNG', 15, 5, 30, 30);
+      console.log('Logo added successfully using base64');
     } catch (logoError) {
       console.log('Logo loading failed, using fallback:', logoError);
       // Fallback to styled text if logo fails
