@@ -58,7 +58,7 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
   try {
     console.log('Starting PDF generation for bulk order:', bulkOrder.orderNumber);
     
-    // Try multiple launch strategies for Windows compatibility
+    // Windows-specific launch options
     const launchOptions = {
       headless: true,
       args: [
@@ -70,7 +70,12 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
         '--no-zygote',
         '--single-process',
         '--disable-web-security',
-        '--disable-features=VizDisplayCompositor'
+        '--disable-features=VizDisplayCompositor',
+        '--disable-background-timer-throttling',
+        '--disable-backgrounding-occluded-windows',
+        '--disable-renderer-backgrounding',
+        '--disable-field-trial-config',
+        '--disable-ipc-flooding-protection'
       ],
       // Windows-specific options
       executablePath: process.platform === 'win32' ? undefined : undefined,
@@ -78,14 +83,14 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
       timeout: 30000
     };
 
-    console.log('Launching browser with options:', launchOptions);
+    console.log('Launching browser with Windows-optimized options');
     
-    // First try: Standard launch
+    // Try multiple launch strategies for Windows compatibility
     try {
       browser = await puppeteer.launch(launchOptions);
-      console.log('Browser launched successfully with standard options');
+      console.log('Browser launched successfully with Windows-optimized options');
     } catch (launchError: any) {
-      console.log('Standard launch failed, trying alternative options:', launchError.message);
+      console.log('Windows-optimized launch failed, trying alternative options:', launchError.message);
       
       // Second try: With different args
       try {
@@ -94,7 +99,8 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
           args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage'
+            '--disable-dev-shm-usage',
+            '--disable-gpu'
           ]
         });
         console.log('Browser launched successfully with alternative options');
@@ -114,7 +120,7 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
       throw new Error('Failed to launch browser after multiple attempts');
     }
     
-    const page = await browser.newPage();
+    let page = await browser.newPage();
     console.log('Page created successfully');
     
     // Set viewport for consistent rendering
@@ -143,6 +149,16 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
       try {
         attempts++;
         console.log(`PDF generation attempt ${attempts}/${maxAttempts}`);
+        
+        // Check if page is still valid
+        if (page.isClosed()) {
+          console.log('Page is closed, creating new page');
+          await page.close();
+          page = await browser.newPage();
+          await page.setViewport({ width: 1200, height: 800 });
+          await page.setContent(htmlContent, { waitUntil: 'networkidle0', timeout: 30000 });
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
         
         pdfBuffer = await page.pdf({
           format: 'A4',
