@@ -15,14 +15,51 @@ interface BulkOrder {
   orderNumber: string;
 }
 
+// Fallback PDF generation using html-pdf-node (if available)
+const generatePDFFallback = async (htmlContent: string): Promise<Buffer | null> => {
+  try {
+    // Try to use html-pdf-node as fallback
+    const htmlPdfNode = await import('html-pdf-node');
+    
+    const options = {
+      format: 'A4',
+      margin: {
+        top: '20px',
+        bottom: '20px',
+        left: '20px',
+        right: '20px'
+      }
+    };
+    
+    const file = { content: htmlContent };
+    
+    // Use callback approach since generatePdf returns void
+    return new Promise((resolve) => {
+      htmlPdfNode.generatePdf(file, options, (err: Error, buffer: Buffer) => {
+        if (err) {
+          console.log('Fallback PDF generation error:', err);
+          resolve(null);
+        } else {
+          console.log('Fallback PDF generation successful using html-pdf-node');
+          resolve(Buffer.from(buffer));
+        }
+      });
+    });
+    
+  } catch (fallbackError) {
+    console.log('Fallback PDF generation also failed:', fallbackError);
+    return null;
+  }
+};
+
 export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buffer> => {
   let browser = null;
   
   try {
     console.log('Starting PDF generation for bulk order:', bulkOrder.orderNumber);
     
-    // Launch puppeteer browser with production-friendly options
-    browser = await puppeteer.launch({
+    // Try multiple launch strategies for Windows compatibility
+    const launchOptions = {
       headless: true,
       args: [
         '--no-sandbox', 
@@ -31,41 +68,140 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
         '--disable-gpu',
         '--no-first-run',
         '--no-zygote',
-        '--single-process'
-      ]
-    });
+        '--single-process',
+        '--disable-web-security',
+        '--disable-features=VizDisplayCompositor'
+      ],
+      // Windows-specific options
+      executablePath: process.platform === 'win32' ? undefined : undefined,
+      ignoreDefaultArgs: ['--disable-extensions'],
+      timeout: 30000
+    };
+
+    console.log('Launching browser with options:', launchOptions);
     
-    console.log('Browser launched successfully');
+    // First try: Standard launch
+    try {
+      browser = await puppeteer.launch(launchOptions);
+      console.log('Browser launched successfully with standard options');
+    } catch (launchError: any) {
+      console.log('Standard launch failed, trying alternative options:', launchError.message);
+      
+      // Second try: With different args
+      try {
+        browser = await puppeteer.launch({
+          ...launchOptions,
+          args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage'
+          ]
+        });
+        console.log('Browser launched successfully with alternative options');
+      } catch (secondLaunchError: any) {
+        console.log('Alternative launch failed, trying minimal options:', secondLaunchError.message);
+        
+        // Third try: Minimal options
+        browser = await puppeteer.launch({
+          headless: true,
+          args: ['--no-sandbox']
+        });
+        console.log('Browser launched successfully with minimal options');
+      }
+    }
+    
+    if (!browser) {
+      throw new Error('Failed to launch browser after multiple attempts');
+    }
     
     const page = await browser.newPage();
     console.log('Page created successfully');
+    
+    // Set viewport for consistent rendering
+    await page.setViewport({ width: 1200, height: 800 });
     
     // Create HTML content for the invoice
     const htmlContent = createInvoiceHTML(bulkOrder);
     console.log('HTML content created, length:', htmlContent.length);
     
-    // Set the HTML content
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+    // Set the HTML content with longer timeout
+    await page.setContent(htmlContent, { 
+      waitUntil: 'networkidle0',
+      timeout: 30000 
+    });
     console.log('HTML content set on page');
     
-    // Generate PDF
-    const pdfBuffer = await page.pdf({
-      format: 'A4',
-      printBackground: true,
-      margin: {
-        top: '20px',
-        bottom: '20px',
-        left: '20px',
-        right: '20px'
-      }
-    });
+    // Wait a bit for content to render
+    await new Promise(resolve => setTimeout(resolve, 2000));
     
-    console.log('PDF generated successfully, buffer size:', pdfBuffer.length);
+    // Generate PDF with multiple attempts
+    let pdfBuffer = null;
+    let attempts = 0;
+    const maxAttempts = 3;
+    
+    while (attempts < maxAttempts && !pdfBuffer) {
+      try {
+        attempts++;
+        console.log(`PDF generation attempt ${attempts}/${maxAttempts}`);
+        
+        pdfBuffer = await page.pdf({
+          format: 'A4',
+          printBackground: true,
+          margin: {
+            top: '20px',
+            bottom: '20px',
+            left: '20px',
+            right: '20px'
+          },
+          timeout: 30000
+        });
+        
+        console.log(`PDF generated successfully on attempt ${attempts}, buffer size:`, pdfBuffer.length);
+        break;
+        
+      } catch (pdfError: any) {
+        console.error(`PDF generation attempt ${attempts} failed:`, pdfError.message);
+        if (attempts === maxAttempts) {
+          throw pdfError;
+        }
+        // Wait before retry
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    }
+    
+    if (!pdfBuffer) {
+      throw new Error('PDF generation failed after all attempts');
+    }
+    
     return Buffer.from(pdfBuffer);
     
   } catch (error) {
-    console.error('Error generating PDF:', error);
+    console.error('Error generating PDF with Puppeteer:', error);
     console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+    console.error('Platform:', process.platform);
+    console.error('Node version:', process.version);
+    
+    // Try fallback PDF generation
+    console.log('Attempting fallback PDF generation...');
+    const htmlContent = createInvoiceHTML(bulkOrder);
+    const fallbackPdf = await generatePDFFallback(htmlContent);
+    
+    if (fallbackPdf) {
+      console.log('Fallback PDF generation successful');
+      return fallbackPdf;
+    }
+    
+    // Try to provide more specific error information
+    if (error instanceof Error) {
+      if (error.message.includes('timeout')) {
+        throw new Error('PDF generation timed out - browser may be slow to respond');
+      } else if (error.message.includes('launch')) {
+        throw new Error('Failed to launch browser - check if Chrome/Chromium is available');
+      } else if (error.message.includes('navigation')) {
+        throw new Error('Failed to navigate page during PDF generation');
+      }
+    }
+    
     throw new Error(`Failed to generate PDF invoice: ${error instanceof Error ? error.message : 'Unknown error'}`);
   } finally {
     if (browser) {
