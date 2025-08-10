@@ -204,3 +204,131 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
     });
   }
 }; 
+
+export const sendIndividualOrderEmailWithPDF = async (req: Request, res: Response) => {
+  try {
+    const { orders, orderNumber } = req.body;
+
+    if (!orders || !Array.isArray(orders) || orders.length === 0) {
+      return res.status(400).json({ error: 'Missing or invalid orders data' });
+    }
+
+    // Check email configuration first
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+      return res.status(500).json({ 
+        error: 'Email configuration error',
+        details: 'Email credentials not configured. Please set EMAIL_USER and EMAIL_PASSWORD environment variables.'
+      });
+    }
+
+    // Generate unique order number if not provided
+    const finalOrderNumber = orderNumber || `IO-${Date.now()}`;
+    
+    // Prepare data for PDF generation
+    const orderData = {
+      items: orders.map((order: any) => ({
+        partNumber: order.partNumber || order.modelName,
+        model: order.modelName || order.model,
+        location: order.location,
+        quantity: order.quantity
+      })),
+      orderDate: new Date().toLocaleDateString(),
+      orderNumber: finalOrderNumber
+    };
+
+    // Generate PDF
+    let pdfBuffer = null;
+    let pdfGenerated = false;
+    
+    try {
+      console.log('Generating PDF for individual order:', finalOrderNumber);
+      pdfBuffer = await generateBulkInvoicePDF(orderData);
+      console.log('PDF generated successfully, buffer size:', pdfBuffer.length);
+      pdfGenerated = true;
+    } catch (pdfError) {
+      console.error('PDF generation failed:', pdfError);
+      pdfGenerated = false;
+    }
+
+    // Create transporter
+    let transporter;
+    try {
+      transporter = createTransporter();
+    } catch (error) {
+      return res.status(500).json({ 
+        error: 'Email configuration error',
+        details: error instanceof Error ? error.message : 'Email credentials not configured'
+      });
+    }
+
+    // Calculate totals
+    const totalItems = orders.length;
+    const totalQuantity = orders.reduce((sum: number, order: any) => sum + order.quantity, 0);
+
+    // Email configuration
+    const mailOptions: any = {
+      from: process.env.EMAIL_USER,
+      to: 'khadkasakriya81@gmail.com',
+      subject: `Individual Order Request - ${finalOrderNumber}`,
+      text: `Individual order request for ${totalItems} items with total quantity of ${totalQuantity}.${pdfGenerated ? ' PDF invoice attached.' : ' PDF generation failed, but order details are included below.'}`,
+      html: `
+        <h2>Individual Order Request</h2>
+        <p><strong>Order Number:</strong> ${finalOrderNumber}</p>
+        <p><strong>Date:</strong> ${new Date().toLocaleDateString()}</p>
+        <p><strong>Total Items:</strong> ${totalItems}</p>
+        <p><strong>Total Quantity:</strong> ${totalQuantity}</p>
+        
+        ${pdfGenerated ? '<p>Please find the detailed invoice attached as PDF.</p>' : '<p style="color: #d97706;">⚠️ PDF generation failed, but order details are included below.</p>'}
+        
+        <h3>Order Details:</h3>
+        <ul>
+          ${orders.map((order: any) => 
+            `<li><strong>Part:</strong> ${order.partNumber || order.modelName} | <strong>Model:</strong> ${order.modelName || order.model} | <strong>Qty:</strong> ${order.quantity} | <strong>Location:</strong> ${order.location}</li>`
+          ).join('')}
+        </ul>
+        
+        <p>Thank you!</p>
+        <hr>
+        <p style="font-size: 12px; color: #666;">
+          <strong>Precision Turbo Services</strong><br>
+          Professional Turbo Management Solutions<br>
+          Email: turboprecision2@gmail.com
+        </p>
+      `
+    };
+
+    // Add PDF attachment if generated successfully
+    if (pdfGenerated && pdfBuffer) {
+      mailOptions.attachments = [
+        {
+          filename: `Individual_Order_Invoice_${finalOrderNumber}.pdf`,
+          content: pdfBuffer,
+          contentType: 'application/pdf'
+        }
+      ];
+      console.log('PDF attachment added to individual order email');
+    } else {
+      mailOptions.attachments = [];
+      console.log('No PDF attachment - PDF generation failed');
+    }
+
+    // Send email
+    const info = await transporter.sendMail(mailOptions);
+    
+    res.status(200).json({ 
+      message: pdfGenerated ? 'Individual order email with PDF sent successfully' : 'Individual order email sent successfully (PDF generation failed)',
+      messageId: info?.messageId || 'unknown',
+      orderNumber: finalOrderNumber,
+      totalItems,
+      totalQuantity,
+      pdfGenerated
+    });
+
+  } catch (error) {
+    console.error('Error in sendIndividualOrderEmailWithPDF:', error);
+    res.status(500).json({ 
+      error: 'Failed to send individual order email',
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
+  }
+}; 
