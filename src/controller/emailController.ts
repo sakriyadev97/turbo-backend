@@ -79,7 +79,7 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
     const bulkOrderData = {
       items: orders.map((order: any) => ({
         partNumber: order.partNumber,
-        model: order.model,
+        model: order.modelName || order.model, // Handle both modelName and model for backward compatibility
         location: order.location,
         quantity: order.quantity
       })),
@@ -115,7 +115,7 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
         <h3>Order Summary:</h3>
         <ul>
           ${orders.map((order: any) => 
-            `<li><strong>Part:</strong> ${order.partNumber} | <strong>Model:</strong> ${order.model} | <strong>Qty:</strong> ${order.quantity} | <strong>Location:</strong> ${order.location}</li>`
+            `<li><strong>Part:</strong> ${order.partNumber} | <strong>Model:</strong> ${order.modelName || order.model} | <strong>Qty:</strong> ${order.quantity} | <strong>Location:</strong> ${order.location}</li>`
           ).join('')}
         </ul>
         

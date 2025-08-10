@@ -1,36 +1,29 @@
-import Express from "express";
-import helmet from "helmet";
-import routes from "./routes/index";
-import cors from "cors";
-import config from "./config";
-import { ensureDBConnection } from "./middleware/dbMiddleware";
-
-import db, { connectDB } from "./config/db/db";
-
-
-
-
-const app = Express();
-
-
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const helmet_1 = __importDefault(require("helmet"));
+const index_1 = __importDefault(require("./routes/index"));
+const cors_1 = __importDefault(require("cors"));
+const dbMiddleware_1 = require("./middleware/dbMiddleware");
+const db_1 = require("./config/db/db");
+const app = (0, express_1.default)();
 // app.use(cors({
 //   origin: function (origin, callback) {
 //     console.log('CORS request from origin:', origin);
-    
 //     // Allow requests with no origin (like mobile apps or curl requests)
 //     if (!origin) {
 //       console.log('No origin, allowing request');
 //       return callback(null, true);
 //     }
-    
 //     // Get allowed origins from config, with fallbacks
 //     let allowedOrigins = [
 //       'http://localhost:3000', 
 //       'http://localhost:3001',
 //       'https://turbo-frontend-kappa.vercel.app'
-
 //     ];
-    
 //     if (config.app.allowedOrigin) {
 //       // Handle both single origin and comma-separated origins
 //       if (config.app.allowedOrigin.includes(',')) {
@@ -45,10 +38,8 @@ const app = Express();
 //         }
 //       }
 //     }
-    
 //     console.log('Allowed origins:', allowedOrigins);
 //     console.log('Request origin:', origin);
-    
 //     // Check if origin matches any allowed origin
 //     const isAllowed = allowedOrigins.some(allowedOrigin => {
 //       // Handle wildcard patterns for Vercel
@@ -58,7 +49,6 @@ const app = Express();
 //       }
 //       return allowedOrigin === origin;
 //     });
-    
 //     if (isAllowed) {
 //       console.log('Origin allowed');
 //       callback(null, true);
@@ -71,45 +61,38 @@ const app = Express();
 //   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 //   allowedHeaders: ['Content-Type', 'Authorization']
 // }));
-
-app.use(cors({
-  origin: ["http://localhost:3000", "https://turbo-frontend-kappa.vercel.app"],
-  credentials: true, 
+app.use((0, cors_1.default)({
+    origin: ["http://localhost:3000", "https://turbo-frontend-kappa.vercel.app"],
+    credentials: true,
 }));
-app.use(Express.json());
-app.use(helmet())
-
-
-
+app.use(express_1.default.json());
+app.use((0, helmet_1.default)());
 // Root route for testing
 app.get('/', (req, res) => {
-  res.json({ 
-    message: 'Turbo Backend API is running!',
-    endpoints: {
-      turbos: '/api/turbos',
-      stats: '/api/turbos/stats',
-      auth: '/api/auth/login',
-      pendingOrders: '/api/pending-orders'
-    }
-  });
+    res.json({
+        message: 'Turbo Backend API is running!',
+        endpoints: {
+            turbos: '/api/turbos',
+            stats: '/api/turbos/stats',
+            auth: '/api/auth/login',
+            pendingOrders: '/api/pending-orders'
+        }
+    });
 });
-
-app.use('/api', ensureDBConnection, routes)
-
+app.use('/api', dbMiddleware_1.ensureDBConnection, index_1.default);
 // Initialize database connection
 const initializeApp = async () => {
-  try {
-    // Connect to databasea
-    await connectDB();
-    console.log("⚡️[server]: Database connected and server ready");
-  } catch (error) {
-    console.error('Failed to initialize app:', error);
-    throw error;
-  }
+    try {
+        // Connect to databasea
+        await (0, db_1.connectDB)();
+        console.log("⚡️[server]: Database connected and server ready");
+    }
+    catch (error) {
+        console.error('Failed to initialize app:', error);
+        throw error;
+    }
 };
-
 // Initialize the app
 initializeApp();
-
 // Export the Express app for Vercel serverless functions
-export default app;
+exports.default = app;
