@@ -54,12 +54,19 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
     doc.setFillColor(30, 64, 175); // Blue background
     doc.rect(0, 0, pageWidth, 40, 'F');
     
-    // Company logo placeholder (blue circle with car emoji)
-    doc.setFillColor(255, 255, 255);
-    doc.circle(30, 20, 15, 'F');
-    doc.setTextColor(30, 64, 175);
-    doc.setFontSize(20);
-    doc.text('🚗', 25, 25);
+    // Company logo (actual logo.png file)
+    try {
+      // Add logo image to PDF
+      doc.addImage('./logo.png', 'PNG', 15, 5, 30, 30);
+    } catch (logoError) {
+      console.log('Logo loading failed, using fallback:', logoError);
+      // Fallback to styled text if logo fails
+      doc.setFillColor(255, 255, 255);
+      doc.circle(30, 20, 15, 'F');
+      doc.setTextColor(30, 64, 175);
+      doc.setFontSize(20);
+      doc.text('🚗', 25, 25);
+    }
     
     // Company name
     doc.setTextColor(255, 255, 255);
