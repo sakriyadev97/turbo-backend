@@ -19,19 +19,34 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
   let browser = null;
   
   try {
-    // Launch puppeteer browser
+    console.log('Starting PDF generation for bulk order:', bulkOrder.orderNumber);
+    
+    // Launch puppeteer browser with production-friendly options
     browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
+      args: [
+        '--no-sandbox', 
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-gpu',
+        '--no-first-run',
+        '--no-zygote',
+        '--single-process'
+      ]
     });
     
+    console.log('Browser launched successfully');
+    
     const page = await browser.newPage();
+    console.log('Page created successfully');
     
     // Create HTML content for the invoice
     const htmlContent = createInvoiceHTML(bulkOrder);
+    console.log('HTML content created, length:', htmlContent.length);
     
     // Set the HTML content
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+    console.log('HTML content set on page');
     
     // Generate PDF
     const pdfBuffer = await page.pdf({
@@ -45,14 +60,21 @@ export const generateBulkInvoicePDF = async (bulkOrder: BulkOrder): Promise<Buff
       }
     });
     
+    console.log('PDF generated successfully, buffer size:', pdfBuffer.length);
     return Buffer.from(pdfBuffer);
     
   } catch (error) {
     console.error('Error generating PDF:', error);
-    throw new Error('Failed to generate PDF invoice');
+    console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+    throw new Error(`Failed to generate PDF invoice: ${error instanceof Error ? error.message : 'Unknown error'}`);
   } finally {
     if (browser) {
-      await browser.close();
+      try {
+        await browser.close();
+        console.log('Browser closed successfully');
+      } catch (closeError) {
+        console.error('Error closing browser:', closeError);
+      }
     }
   }
 };

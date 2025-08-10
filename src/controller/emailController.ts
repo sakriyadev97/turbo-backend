@@ -87,8 +87,19 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
       orderNumber: finalOrderNumber
     };
 
-    // Generate PDF
-    const pdfBuffer = await generateBulkInvoicePDF(bulkOrderData);
+    // Generate PDF with fallback
+    let pdfBuffer = null;
+    let pdfGenerated = false;
+    
+    try {
+      console.log('Attempting to generate PDF for bulk order:', finalOrderNumber);
+      pdfBuffer = await generateBulkInvoicePDF(bulkOrderData);
+      console.log('PDF generated successfully, buffer size:', pdfBuffer.length);
+      pdfGenerated = true;
+    } catch (pdfError) {
+      console.error('PDF generation failed, will send email without attachment:', pdfError);
+      pdfGenerated = false;
+    }
 
     // Create transporter
     const transporter = createTransporter();
@@ -97,12 +108,12 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
     const totalItems = orders.length;
     const totalQuantity = orders.reduce((sum: number, order: any) => sum + order.quantity, 0);
 
-    // Email configuration with PDF attachment
+    // Email configuration with conditional PDF attachment
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'khadkasakriya81@gmail.com',
       subject: `Bulk Order Request - ${finalOrderNumber}`,
-      text: `Please find attached the bulk order invoice for ${totalItems} items with total quantity of ${totalQuantity}.`,
+      text: `Bulk order request for ${totalItems} items with total quantity of ${totalQuantity}.${pdfGenerated ? ' PDF invoice attached.' : ' PDF generation failed, but order details are included below.'}`,
       html: `
         <h2>Bulk Order Request</h2>
         <p><strong>Order Number:</strong> ${finalOrderNumber}</p>
@@ -110,7 +121,7 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
         <p><strong>Total Items:</strong> ${totalItems}</p>
         <p><strong>Total Quantity:</strong> ${totalQuantity}</p>
         
-        <p>Please find the detailed invoice attached as PDF.</p>
+        ${pdfGenerated ? '<p>Please find the detailed invoice attached as PDF.</p>' : '<p style="color: #d97706;">⚠️ PDF generation failed, but order details are included below.</p>'}
         
         <h3>Order Summary:</h3>
         <ul>
@@ -127,24 +138,25 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
           Email: turboprecision2@gmail.com
         </p>
       `,
-      attachments: [
+      attachments: pdfGenerated && pdfBuffer ? [
         {
           filename: `Bulk_Order_Invoice_${finalOrderNumber}.pdf`,
           content: pdfBuffer,
           contentType: 'application/pdf'
         }
-      ]
+      ] : []
     };
 
     // Send email
     const info = await transporter.sendMail(mailOptions);
     
     res.status(200).json({ 
-      message: 'Bulk order email with PDF sent successfully',
-      messageId: info.messageId,
+      message: pdfGenerated ? 'Bulk order email with PDF sent successfully' : 'Bulk order email sent successfully (PDF generation failed)',
+      messageId: info?.messageId || 'unknown',
       orderNumber: finalOrderNumber,
       totalItems,
-      totalQuantity
+      totalQuantity,
+      pdfGenerated
     });
 
   } catch (error) {
