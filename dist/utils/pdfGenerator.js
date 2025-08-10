@@ -1,496 +1,184 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
-        };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateBulkInvoicePDF = void 0;
-const puppeteer_1 = __importDefault(require("puppeteer"));
-// Fallback PDF generation using html-pdf-node (if available)
-const generatePDFFallback = async (htmlContent) => {
-    try {
-        // Try to use html-pdf-node as fallback
-        const htmlPdfNode = await Promise.resolve().then(() => __importStar(require('html-pdf-node')));
-        const options = {
-            format: 'A4',
-            margin: {
-                top: '20px',
-                bottom: '20px',
-                left: '20px',
-                right: '20px'
-            }
-        };
-        const file = { content: htmlContent };
-        // Use callback approach since generatePdf returns void
-        return new Promise((resolve) => {
-            htmlPdfNode.generatePdf(file, options, (err, buffer) => {
-                if (err) {
-                    console.log('Fallback PDF generation error:', err);
-                    resolve(null);
-                }
-                else {
-                    console.log('Fallback PDF generation successful using html-pdf-node');
-                    resolve(Buffer.from(buffer));
-                }
-            });
-        });
-    }
-    catch (fallbackError) {
-        console.log('Fallback PDF generation also failed:', fallbackError);
-        return null;
-    }
-};
+const jspdf_1 = __importDefault(require("jspdf"));
 const generateBulkInvoicePDF = async (bulkOrder) => {
-    let browser = null;
     try {
-        console.log('Starting PDF generation for bulk order:', bulkOrder.orderNumber);
-        // Try multiple launch strategies for Windows compatibility
-        const launchOptions = {
-            headless: true,
-            args: [
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-dev-shm-usage',
-                '--disable-gpu',
-                '--no-first-run',
-                '--no-zygote',
-                '--single-process',
-                '--disable-web-security',
-                '--disable-features=VizDisplayCompositor'
-            ],
-            // Windows-specific options
-            executablePath: process.platform === 'win32' ? undefined : undefined,
-            ignoreDefaultArgs: ['--disable-extensions'],
-            timeout: 30000
-        };
-        console.log('Launching browser with options:', launchOptions);
-        // First try: Standard launch
-        try {
-            browser = await puppeteer_1.default.launch(launchOptions);
-            console.log('Browser launched successfully with standard options');
-        }
-        catch (launchError) {
-            console.log('Standard launch failed, trying alternative options:', launchError.message);
-            // Second try: With different args
-            try {
-                browser = await puppeteer_1.default.launch({
-                    ...launchOptions,
-                    args: [
-                        '--no-sandbox',
-                        '--disable-setuid-sandbox',
-                        '--disable-dev-shm-usage'
-                    ]
-                });
-                console.log('Browser launched successfully with alternative options');
-            }
-            catch (secondLaunchError) {
-                console.log('Alternative launch failed, trying minimal options:', secondLaunchError.message);
-                // Third try: Minimal options
-                browser = await puppeteer_1.default.launch({
-                    headless: true,
-                    args: ['--no-sandbox']
-                });
-                console.log('Browser launched successfully with minimal options');
-            }
-        }
-        if (!browser) {
-            throw new Error('Failed to launch browser after multiple attempts');
-        }
-        const page = await browser.newPage();
-        console.log('Page created successfully');
-        // Set viewport for consistent rendering
-        await page.setViewport({ width: 1200, height: 800 });
-        // Create HTML content for the invoice
-        const htmlContent = createInvoiceHTML(bulkOrder);
-        console.log('HTML content created, length:', htmlContent.length);
-        // Set the HTML content with longer timeout
-        await page.setContent(htmlContent, {
-            waitUntil: 'networkidle0',
-            timeout: 30000
+        console.log('Starting PDF generation with jsPDF for bulk order:', bulkOrder.orderNumber);
+        // Create new PDF document
+        const doc = new jspdf_1.default();
+        // Set document properties
+        doc.setProperties({
+            title: `Turbo Order Invoice - ${bulkOrder.orderNumber}`,
+            subject: 'Bulk Order Request',
+            author: 'Precision Turbo Services',
+            creator: 'Turbo Backend System'
         });
-        console.log('HTML content set on page');
-        // Wait a bit for content to render
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        // Generate PDF with multiple attempts
-        let pdfBuffer = null;
-        let attempts = 0;
-        const maxAttempts = 3;
-        while (attempts < maxAttempts && !pdfBuffer) {
-            try {
-                attempts++;
-                console.log(`PDF generation attempt ${attempts}/${maxAttempts}`);
-                pdfBuffer = await page.pdf({
-                    format: 'A4',
-                    printBackground: true,
-                    margin: {
-                        top: '20px',
-                        bottom: '20px',
-                        left: '20px',
-                        right: '20px'
-                    },
-                    timeout: 30000
-                });
-                console.log(`PDF generated successfully on attempt ${attempts}, buffer size:`, pdfBuffer.length);
-                break;
+        // Set initial position
+        let yPosition = 20;
+        const pageWidth = doc.internal.pageSize.getWidth();
+        const margin = 20;
+        const contentWidth = pageWidth - (2 * margin);
+        // Helper function to add text with word wrapping
+        const addWrappedText = (text, x, y, maxWidth, fontSize = 12) => {
+            doc.setFontSize(fontSize);
+            const lines = doc.splitTextToSize(text, maxWidth);
+            doc.text(lines, x, y);
+            return lines.length * fontSize * 0.4; // Return height used
+        };
+        // Helper function to add a line
+        const addLine = (y) => {
+            doc.setDrawColor(30, 64, 175); // Blue color
+            doc.setLineWidth(0.5);
+            doc.line(margin, y, pageWidth - margin, y);
+            return y + 5;
+        };
+        // Header
+        doc.setFillColor(30, 64, 175); // Blue background
+        doc.rect(0, 0, pageWidth, 40, 'F');
+        // Company logo placeholder (blue circle with car emoji)
+        doc.setFillColor(255, 255, 255);
+        doc.circle(30, 20, 15, 'F');
+        doc.setTextColor(30, 64, 175);
+        doc.setFontSize(20);
+        doc.text('🚗', 25, 25);
+        // Company name
+        doc.setTextColor(255, 255, 255);
+        doc.setFontSize(18);
+        doc.setFont('helvetica', 'bold');
+        doc.text('Precision Turbo Services', 55, 20);
+        // Company subtitle
+        doc.setFontSize(10);
+        doc.setFont('helvetica', 'normal');
+        doc.text('Professional Turbo Management Solutions', 55, 30);
+        doc.text('Email: turboprecision2@gmail.com', 55, 35);
+        // Reset text color and position
+        doc.setTextColor(0, 0, 0);
+        yPosition = 50;
+        // Invoice title
+        doc.setFontSize(24);
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(30, 64, 175);
+        doc.text('INVOICE', pageWidth - margin - 30, yPosition);
+        // Invoice details
+        yPosition += 15;
+        doc.setFontSize(12);
+        doc.setFont('helvetica', 'normal');
+        doc.setTextColor(100, 100, 100);
+        doc.text(`Order #: ${bulkOrder.orderNumber}`, pageWidth - margin - 50, yPosition);
+        yPosition += 8;
+        doc.text(`Date: ${bulkOrder.orderDate}`, pageWidth - margin - 50, yPosition);
+        yPosition += 8;
+        doc.text('Status: Pending', pageWidth - margin - 50, yPosition);
+        // Reset position for main content
+        yPosition = 80;
+        // Order summary section
+        doc.setFillColor(248, 250, 252); // Light gray background
+        doc.rect(margin, yPosition, contentWidth, 40, 'F');
+        yPosition += 15;
+        doc.setFontSize(16);
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(55, 65, 81);
+        doc.text('Order Summary', margin + 10, yPosition);
+        yPosition += 20;
+        // Summary grid
+        const summaryItems = [
+            { label: 'Different Models', value: bulkOrder.items.length.toString() },
+            { label: 'Total Quantity', value: bulkOrder.items.reduce((sum, item) => sum + item.quantity, 0).toString() },
+            { label: 'Locations', value: new Set(bulkOrder.items.map(item => item.location)).size.toString() }
+        ];
+        const gridWidth = contentWidth / 3;
+        summaryItems.forEach((item, index) => {
+            const x = margin + (index * gridWidth) + 5;
+            // Value
+            doc.setFontSize(20);
+            doc.setFont('helvetica', 'bold');
+            doc.setTextColor(30, 64, 175);
+            doc.text(item.value, x + 15, yPosition);
+            // Label
+            yPosition += 8;
+            doc.setFontSize(10);
+            doc.setFont('helvetica', 'normal');
+            doc.setTextColor(107, 114, 128);
+            doc.text(item.label, x, yPosition);
+            yPosition -= 8; // Reset for next column
+        });
+        yPosition += 30;
+        // Items table header
+        doc.setFillColor(30, 64, 175);
+        doc.rect(margin, yPosition, contentWidth, 15, 'F');
+        yPosition += 12;
+        doc.setFontSize(12);
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(255, 255, 255);
+        const columnWidths = [50, 60, 60, 30];
+        const columnPositions = [margin + 5, margin + 55, margin + 115, margin + 175];
+        const headers = ['Part Number', 'Model', 'Location', 'Qty'];
+        headers.forEach((header, index) => {
+            doc.text(header, columnPositions[index], yPosition);
+        });
+        yPosition += 10;
+        // Items table rows
+        doc.setTextColor(0, 0, 0);
+        doc.setFont('helvetica', 'normal');
+        bulkOrder.items.forEach((item, index) => {
+            // Check if we need a new page
+            if (yPosition > 250) {
+                doc.addPage();
+                yPosition = 20;
             }
-            catch (pdfError) {
-                console.error(`PDF generation attempt ${attempts} failed:`, pdfError.message);
-                if (attempts === maxAttempts) {
-                    throw pdfError;
-                }
-                // Wait before retry
-                await new Promise(resolve => setTimeout(resolve, 1000));
+            // Row background (alternating)
+            if (index % 2 === 0) {
+                doc.setFillColor(249, 250, 251);
+                doc.rect(margin, yPosition - 5, contentWidth, 15, 'F');
             }
-        }
-        if (!pdfBuffer) {
-            throw new Error('PDF generation failed after all attempts');
-        }
-        return Buffer.from(pdfBuffer);
+            // Part Number
+            doc.setFont('helvetica', 'bold');
+            doc.setTextColor(30, 64, 175);
+            doc.text(item.partNumber, columnPositions[0], yPosition);
+            // Model
+            doc.setFont('helvetica', 'normal');
+            doc.setTextColor(0, 0, 0);
+            doc.text(item.model, columnPositions[1], yPosition);
+            // Location
+            doc.text(item.location, columnPositions[2], yPosition);
+            // Quantity
+            doc.setFont('helvetica', 'bold');
+            doc.setTextColor(30, 64, 175);
+            doc.text(item.quantity.toString(), columnPositions[3], yPosition);
+            yPosition += 15;
+        });
+        // Footer
+        yPosition += 20;
+        yPosition = addLine(yPosition);
+        yPosition += 10;
+        doc.setFontSize(10);
+        doc.setFont('helvetica', 'normal');
+        doc.setTextColor(107, 114, 128);
+        doc.text('Precision Turbo Services', margin, yPosition);
+        yPosition += 6;
+        doc.text('This is an automated order request. Please process the above items.', margin, yPosition);
+        yPosition += 6;
+        doc.text('For questions, contact: turboprecision2@gmail.com', margin, yPosition);
+        yPosition += 6;
+        doc.text(`Generated on ${new Date().toLocaleString()}`, margin, yPosition);
+        // Convert to buffer
+        const pdfBuffer = doc.output('arraybuffer');
+        const buffer = Buffer.from(pdfBuffer);
+        console.log('PDF generated successfully with jsPDF, buffer size:', buffer.length);
+        return buffer;
     }
     catch (error) {
-        console.error('Error generating PDF with Puppeteer:', error);
-        console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
-        console.error('Platform:', process.platform);
-        console.error('Node version:', process.version);
-        // Try fallback PDF generation
-        console.log('Attempting fallback PDF generation...');
-        const htmlContent = createInvoiceHTML(bulkOrder);
-        const fallbackPdf = await generatePDFFallback(htmlContent);
-        if (fallbackPdf) {
-            console.log('Fallback PDF generation successful');
-            return fallbackPdf;
-        }
-        // Try to provide more specific error information
-        if (error instanceof Error) {
-            if (error.message.includes('timeout')) {
-                throw new Error('PDF generation timed out - browser may be slow to respond');
-            }
-            else if (error.message.includes('launch')) {
-                throw new Error('Failed to launch browser - check if Chrome/Chromium is available');
-            }
-            else if (error.message.includes('navigation')) {
-                throw new Error('Failed to navigate page during PDF generation');
-            }
-        }
+        console.error('Error generating PDF with jsPDF:', error);
         throw new Error(`Failed to generate PDF invoice: ${error instanceof Error ? error.message : 'Unknown error'}`);
-    }
-    finally {
-        if (browser) {
-            try {
-                await browser.close();
-                console.log('Browser closed successfully');
-            }
-            catch (closeError) {
-                console.error('Error closing browser:', closeError);
-            }
-        }
     }
 };
 exports.generateBulkInvoicePDF = generateBulkInvoicePDF;
+// Keep the HTML generation function for reference (not used with jsPDF)
 const createInvoiceHTML = (bulkOrder) => {
-    const { items, orderDate, orderNumber } = bulkOrder;
-    const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
-    return `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Turbo Order Invoice</title>
-      <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-          color: #333;
-          line-height: 1.6;
-          background: white;
-        }
-        
-        .invoice-container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 30px;
-          background: white;
-        }
-        
-        .invoice-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 40px;
-          padding-bottom: 20px;
-          border-bottom: 3px solid #1e40af;
-        }
-        
-        .company-info {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-        }
-        
-        .company-logo {
-          width: 80px;
-          height: 80px;
-          background: #1e40af;
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          font-size: 24px;
-          font-weight: bold;
-        }
-        
-        .company-details h1 {
-          color: #1e40af;
-          font-size: 24px;
-          margin-bottom: 5px;
-        }
-        
-        .company-details p {
-          color: #6b7280;
-          font-size: 14px;
-        }
-        
-        .invoice-info {
-          text-align: right;
-        }
-        
-        .invoice-info h2 {
-          color: #1e40af;
-          font-size: 28px;
-          margin-bottom: 10px;
-        }
-        
-        .invoice-details {
-          color: #6b7280;
-          font-size: 14px;
-        }
-        
-        .order-summary {
-          background: #f8fafc;
-          padding: 20px;
-          border-radius: 8px;
-          margin-bottom: 30px;
-        }
-        
-        .order-summary h3 {
-          color: #374151;
-          margin-bottom: 15px;
-          font-size: 18px;
-        }
-        
-        .summary-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 20px;
-        }
-        
-        .summary-item {
-          text-align: center;
-          padding: 15px;
-          background: white;
-          border-radius: 6px;
-          border: 1px solid #e5e7eb;
-        }
-        
-        .summary-item .number {
-          font-size: 24px;
-          font-weight: bold;
-          color: #1e40af;
-          margin-bottom: 5px;
-        }
-        
-        .summary-item .label {
-          font-size: 12px;
-          color: #6b7280;
-          text-transform: uppercase;
-          font-weight: 600;
-        }
-        
-        .items-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-bottom: 30px;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-          border-radius: 8px;
-          overflow: hidden;
-        }
-        
-        .items-table thead {
-          background: #1e40af;
-          color: white;
-        }
-        
-        .items-table th {
-          padding: 15px;
-          text-align: left;
-          font-weight: 600;
-          font-size: 14px;
-        }
-        
-        .items-table tbody tr {
-          border-bottom: 1px solid #e5e7eb;
-        }
-        
-        .items-table tbody tr:nth-child(even) {
-          background: #f9fafb;
-        }
-        
-        .items-table tbody tr:hover {
-          background: #f3f4f6;
-        }
-        
-        .items-table td {
-          padding: 15px;
-          font-size: 14px;
-        }
-        
-        .part-number {
-          font-weight: 600;
-          color: #1e40af;
-        }
-        
-        .quantity {
-          text-align: center;
-          font-weight: 600;
-          background: #dbeafe;
-          color: #1e40af;
-          border-radius: 4px;
-          padding: 4px 8px;
-        }
-        
-        .footer {
-          margin-top: 40px;
-          text-align: center;
-          color: #6b7280;
-          font-size: 12px;
-          border-top: 1px solid #e5e7eb;
-          padding-top: 20px;
-        }
-        
-        .footer p {
-          margin-bottom: 5px;
-        }
-        
-        @media print {
-          .invoice-container {
-            padding: 0;
-            box-shadow: none;
-          }
-        }
-      </style>
-    </head>
-    <body>
-      <div class="invoice-container">
-        <!-- Header -->
-        <div class="invoice-header">
-          <div class="company-info">
-            <div class="company-logo">
-              🚗
-            </div>
-            <div class="company-details">
-              <h1>Precision Turbo Services</h1>
-              <p>Professional Turbo Management Solutions</p>
-              <p>Email: turboprecision2@gmail.com</p>
-            </div>
-          </div>
-          <div class="invoice-info">
-            <h2>INVOICE</h2>
-            <div class="invoice-details">
-              <p><strong>Order #:</strong> ${orderNumber}</p>
-              <p><strong>Date:</strong> ${orderDate}</p>
-              <p><strong>Status:</strong> Pending</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Order Summary -->
-        <div class="order-summary">
-          <h3>Order Summary</h3>
-          <div class="summary-grid">
-            <div class="summary-item">
-              <div class="number">${items.length}</div>
-              <div class="label">Different Models</div>
-            </div>
-            <div class="summary-item">
-              <div class="number">${totalItems}</div>
-              <div class="label">Total Quantity</div>
-            </div>
-            <div class="summary-item">
-              <div class="number">${new Set(items.map(item => item.location)).size}</div>
-              <div class="label">Locations</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Items Table -->
-        <table class="items-table">
-          <thead>
-            <tr>
-              <th>Part Number</th>
-              <th>Model</th>
-              <th>Location</th>
-              <th>Quantity</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${items.map((item, index) => `
-              <tr>
-                <td class="part-number">${item.partNumber}</td>
-                <td>${item.model}</td>
-                <td>${item.location}</td>
-                <td><span class="quantity">${item.quantity}</span></td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-        
-        <!-- Footer -->
-        <div class="footer">
-          <p><strong>Precision Turbo Services</strong></p>
-          <p>This is an automated order request. Please process the above items.</p>
-          <p>For questions, contact: turboprecision2@gmail.com</p>
-          <p>Generated on ${new Date().toLocaleString()}</p>
-        </div>
-      </div>
-    </body>
-    </html>
-  `;
+    // This function is kept for reference but not used with jsPDF
+    return '';
 };

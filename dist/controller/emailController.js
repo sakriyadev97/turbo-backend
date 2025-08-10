@@ -8,6 +8,10 @@ const nodemailer_1 = __importDefault(require("nodemailer"));
 const pdfGenerator_1 = require("../utils/pdfGenerator");
 // Configure email transporter (you'll need to set up your email credentials)
 const createTransporter = () => {
+    // Check if environment variables are set
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+        throw new Error('Email credentials not configured. Please set EMAIL_USER and EMAIL_PASSWORD environment variables.');
+    }
     return nodemailer_1.default.createTransport({
         service: 'gmail', // or your email service
         auth: {
@@ -29,7 +33,16 @@ const sendOrderEmail = async (req, res) => {
             return res.status(400).json({ error: 'Missing required fields' });
         }
         // Create transporter
-        const transporter = createTransporter();
+        let transporter;
+        try {
+            transporter = createTransporter();
+        }
+        catch (error) {
+            return res.status(500).json({
+                error: 'Email configuration error',
+                details: error instanceof Error ? error.message : 'Email credentials not configured'
+            });
+        }
         // Email configuration
         const mailOptions = {
             from: process.env.EMAIL_USER,
@@ -66,6 +79,13 @@ const sendBulkOrderEmailWithPDF = async (req, res) => {
         if (!orders || !Array.isArray(orders) || orders.length === 0) {
             return res.status(400).json({ error: 'Missing or invalid orders data' });
         }
+        // Check email configuration first
+        if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+            return res.status(500).json({
+                error: 'Email configuration error',
+                details: 'Email credentials not configured. Please set EMAIL_USER and EMAIL_PASSWORD environment variables.'
+            });
+        }
         // Generate unique order number if not provided
         const finalOrderNumber = orderNumber || `BO-${Date.now()}`;
         // Prepare data for PDF generation
@@ -93,7 +113,16 @@ const sendBulkOrderEmailWithPDF = async (req, res) => {
             pdfGenerated = false;
         }
         // Create transporter
-        const transporter = createTransporter();
+        let transporter;
+        try {
+            transporter = createTransporter();
+        }
+        catch (error) {
+            return res.status(500).json({
+                error: 'Email configuration error',
+                details: error instanceof Error ? error.message : 'Email credentials not configured'
+            });
+        }
         // Calculate totals for email body
         const totalItems = orders.length;
         const totalQuantity = orders.reduce((sum, order) => sum + order.quantity, 0);
@@ -124,15 +153,23 @@ const sendBulkOrderEmailWithPDF = async (req, res) => {
           Professional Turbo Management Solutions<br>
           Email: turboprecision2@gmail.com
         </p>
-      `,
-            attachments: pdfGenerated && pdfBuffer ? [
+      `
+        };
+        // Add PDF attachment if generated successfully
+        if (pdfGenerated && pdfBuffer) {
+            mailOptions.attachments = [
                 {
                     filename: `Bulk_Order_Invoice_${finalOrderNumber}.pdf`,
                     content: pdfBuffer,
                     contentType: 'application/pdf'
                 }
-            ] : []
-        };
+            ];
+            console.log('PDF attachment added to email');
+        }
+        else {
+            mailOptions.attachments = [];
+            console.log('No PDF attachment - PDF generation failed');
+        }
         // Send email
         const info = await transporter.sendMail(mailOptions);
         res.status(200).json({
@@ -145,6 +182,7 @@ const sendBulkOrderEmailWithPDF = async (req, res) => {
         });
     }
     catch (error) {
+        console.error('Error in sendBulkOrderEmailWithPDF:', error);
         res.status(500).json({
             error: 'Failed to send bulk order email',
             details: error instanceof Error ? error.message : 'Unknown error'
