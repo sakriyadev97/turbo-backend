@@ -46,7 +46,7 @@ export const sendOrderEmail = async (req: Request, res: Response) => {
     // Email configuration
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'khadkasakriya81@gmail.com', // Set recipient email
+      to: 'precisionturbos@gmail.com', // Set recipient email
       subject: subject,
       text: body,
       html: `
@@ -140,7 +140,7 @@ export const sendBulkOrderEmailWithPDF = async (req: Request, res: Response) => 
     // Email configuration with conditional PDF attachment
     const mailOptions: any = {
       from: process.env.EMAIL_USER,
-      to: 'khadkasakriya81@gmail.com',
+      to: 'precisionturbos@gmail.com',
       subject: `Bulk Order Request - ${finalOrderNumber}`,
       text: `Bulk order request for ${totalItems} items with total quantity of ${totalQuantity}.${pdfGenerated ? ' PDF invoice attached.' : ' PDF generation failed, but order details are included below.'}`,
       html: `
@@ -268,7 +268,7 @@ export const sendIndividualOrderEmailWithPDF = async (req: Request, res: Respons
     // Email configuration
     const mailOptions: any = {
       from: process.env.EMAIL_USER,
-      to: 'khadkasakriya81@gmail.com',
+      to: 'precisionturbos@gmail.com',
       subject: `Individual Order Request - ${finalOrderNumber}`,
       text: `Individual order request for ${totalItems} items with total quantity of ${totalQuantity}.${pdfGenerated ? ' PDF invoice attached.' : ' PDF generation failed, but order details are included below.'}`,
       html: `
